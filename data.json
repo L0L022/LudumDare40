@@ -1,0 +1,48 @@
+[
+  {
+    "id": "",
+    "description": "",
+    "random": true,
+    "availableTime": 0,
+    "preparationTime": 0,
+    "answers": [
+      {
+        "label": "",
+        "question": "",
+        "comment": "",
+        "money": 0,
+        "mood": 0
+      },
+      {
+        "label": "",
+        "question": "",
+        "comment": "",
+        "money": 0,
+        "mood": 0
+      }
+    ]
+  },
+  {
+    "id": "",
+    "description": "",
+    "random": true,
+    "availableTime": 0,
+    "preparationTime": 0,
+    "answers": [
+      {
+        "label": "",
+        "question": "",
+        "comment": "",
+        "money": 0,
+        "mood": 0
+      },
+      {
+        "label": "",
+        "question": "",
+        "comment": "",
+        "money": 0,
+        "mood": 0
+      }
+    ]
+  }
+]
