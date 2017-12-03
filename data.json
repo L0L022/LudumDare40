@@ -2,7 +2,7 @@
   "money": 5000,
   "mood": 70,
   "intro": "",
-  "win_money": 0, 
+  "win_money": 0,
   "lose_money": 10000,
   "end_win": "",
   "end_lose": "",
@@ -432,7 +432,7 @@
     },
     {
       "id": "event_world_trade_center_2",
-      "description": "Mauvaise nouvelle, la totalité du réseau électrique de votre dernière 		aquisition (le world trade center) doit être refait faute d'entretien",
+      "description": "Mauvaise nouvelle, la totalité du réseau électrique de votre dernière \t\taquisition (le world trade center) doit être refait faute d'entretien",
       "random": false,
       "availableTime": 0,
       "preparationTime": 20,
@@ -491,7 +491,6 @@
           "mood": 20
         }
       ]
-    },
-
+    }
   ]
 }
