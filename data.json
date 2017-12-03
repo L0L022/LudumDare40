@@ -284,6 +284,29 @@
       ]
     },
     {
+      "id": "Jour férié",
+      "description": "Demain c'est le 22 mai, et c'est le jour férié que tout le monde attend",
+      "random": true,
+      "availableTime": 0,
+      "preparationTime": 0,
+      "answers": [
+        {
+          "label": "Libérer vos employés pour la journée",
+          "question": "",
+          "comment": "Une petite pause bien mérité",
+          "money": -1000,
+          "mood": 20
+        },
+        {
+          "label": "Garder tout le monde au  bureau pour avancer sur les nouveaux dossier Picard",
+          "question": "",
+          "comment": "",
+          "money": 600,
+          "mood": 0
+        }
+      ]
+    },
+    {
       "id": "event_noel",
       "description": "C'est Noël ! A cette occasion, l'entreprise a pour habitude d'organiser une grande fête en l'honneur des salariés et de leurs enfants, qui reçoivent de nombreux cadeaux. Ce moment festif s'organise dans des locaux dédiés autour d'un immense buffet. Si l'événement coûte parfois cher à l'entreprise, votre oncle tenait à cet événement.",
       "random": true,
@@ -383,6 +406,92 @@
           "mood": 40
         }
       ]
-    }
+    },
+    {
+      "id": "event_world_trade_center_1",
+      "description": "Le world trade center est mis sur le marché, l'ancien propritéiare à décider de suivre son rêve et se respécialize dans la couture ",
+      "random": true,
+      "availableTime": 0,
+      "preparationTime": 0,
+      "answers": [
+        {
+          "label": "Saisir l'occasion d'aquérir un nouveaux batîment",
+          "question": "event_world_trade_center_2",
+          "comment": "Le world trade center fait désormais partit de vo possessions",
+          "money": -5000,
+          "mood": 10
+        },
+        {
+          "label": "Préférer attendre une meilleur occasion pour investir",
+          "question": "",
+          "comment": "",
+          "money": 0,
+          "mood": 0
+        }
+      ]
+    },
+    {
+      "id": "event_world_trade_center_2",
+      "description": "Mauvaise nouvelle, la totalité du réseau électrique de votre dernière 		aquisition (le world trade center) doit être refait faute d'entretien",
+      "random": false,
+      "availableTime": 0,
+      "preparationTime": 20,
+      "answers": [
+        {
+          "label": "Payer la somme necessaire pour réparer le batiment",
+          "question": "event_world_trade_center-3",
+          "comment": "Le batiment et de nouveau fonctionnel, vos employés peuvent y travailler sereinement",
+          "money": -2000,
+          "mood": 0
+        },
+        {
+          "label": "Revendre le batîment, cela n'en vaut pas la peine",
+          "question": "",
+          "comment": "",
+          "money": 4000,
+          "mood": 0
+        }
+      ]
+    },
+    {
+      "id": "event_world_trade_center_3",
+      "description": "Voulez vos enbaucher une entreprise de coach agile pour dynamiser la production dans votre batiment secondaire ?",
+      "random": false,
+      "availableTime": 0,
+      "preparationTime": 40,
+      "answers": [
+        {
+          "label": "Essayer de dynamiser votre production grâce a cette nouvelle methode agile",
+          "question": "",
+          "comment": "event_world_trade_center_4",
+          "money": -500,
+          "mood": 10
+        },
+        {
+          "label": "Vous ête satisfait du rendement actuel",
+          "question": "",
+          "comment": "",
+          "money": 0,
+          "mood": 0
+        }
+      ]
+    },
+    {
+      "id": "event_world_trade_center_4",
+      "description": "Le world trade center est desormais un des batiments les plus coté de NY ! Tout le monde felicite et reconait votre brio",
+      "random": false,
+      "availableTime": 0,
+      "preparationTime": 15,
+      "answers": [
+        {
+          "label": "ok",
+          "question": "",
+          "comment": "",
+          "money": 8000,
+          "mood": 20
+        }
+      ]
+    },
+
   ]
 }
