@@ -77,6 +77,29 @@
       ]
     },
     {
+      "id": "Restaurent parents",
+      "description": "A rester cloitré dans votre bureau tous les jours vous manquez a vos parents et ils vous ont invité a dîner ce soir",
+      "random": true,
+      "availableTime": 0,
+      "preparationTime": 0,
+      "answers": [
+        {
+          "label": "Quitter le bureau plus tôt et dîner avec vos parents",
+          "question": "",
+          "comment": "Une réunion de famille donne toujours le sourir",
+          "money": 0,
+          "mood": 20
+        },
+        {
+          "label": "Préférer vous avancer sur votre travail",
+          "question": "",
+          "comment": "",
+          "money": 200,
+          "mood": 0
+        }
+      ]
+    },
+    {
       "id": "annuaire",
       "description": "Le nouveau magazine local Megalow a contacté votre service Relations en vue d'un éventuel partenariat. Le magazine dispose d'une base de données considérable sur les habitants de plusieurs quartiers de New York mais des rumeurs inquiétantes circulent à son sujet.",
       "random": true,
