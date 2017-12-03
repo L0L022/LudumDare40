@@ -1,425 +1,365 @@
-[
-  {
-    "id": "recruitment",
-    "description": "Le département Management des équipes innovantes vous propose de recruter une équipe de meeters, chargée de mettre en contact des membres dont le profil est compatible. Que décidez-vous ?",
-    "random": true,
-    "availableTime": 0,
-    "preparationTime": 0,
-    "answers": [
-      {
-        "label": "Recruter des meeters",
-        "question": "",
-        "comment": "Une toute équipe dédiée à la mise en relation des inscrits a été constituée, malgré une quantité astronomique de papiers à remplir. .",
-        "money": 200,
-        "mood": -20
-      },
-      {
-        "label": "Refuser la proposition",
-        "question": "",
-        "comment": "Vous refusez la proposition et évitez ainsi tout un tas de paperasse.",
-        "money": 0,
-        "mood": 20
-      }
-    ]
-  },
-  {
-    "id": "algorithm",
-    "description": "Le département Recherche technique et rigoureuse a mis au point un tout nouvel algorithme de compatibilité. Celui-ci permettra une meilleure correspondance entre les profils de membres compatibles. Mais les équipes ont besoin de fonds pour le finaliser.",
-    "random": true,
-    "availableTime": 0,
-    "preparationTime": 0,
-    "answers": [
-      {
-        "label": "Investir dans l'algorithme 2.0",
-        "question": "",
-        "comment": "L'algorithme s'est avéré raté et a dû être retiré du site en urgence.",
-        "money": -300,
-        "mood": -30
-      },
-      {
-        "label": "Ne pas investir",
-        "question": "",
-        "comment": "Vous préférez ne pas investir dans le futur.",
-        "money": 0,
-        "mood": 0
-      }
-    ]
-  },
-  {
-    "id": "restaurant",
-    "description": "Jenny aimerait organiser un repas pour souder votre équipe. Acceptez-vous de libérer votre jeudi soir ?",
-    "random": true,
-    "availableTime": 0,
-    "preparationTime": 0,
-    "answers": [
-      {
-        "label": "Réserver votre soirée de jeudi pour dîner avec vos collègues",
-        "question": "",
-        "comment": "Souffler un peu fait quelque fois du bien.",
-        "money": ,
-        "mood": 20
-      },
-      {
-        "label": "Préférer vous avancer sur votre travail",
-        "question": "",
-        "comment": "",
-        "money": 200,
-        "mood": 0
-      }
-    ]
-  },
-  {
-    "id": "annuaire",
-    "description": "Le nouveau magazine local Megalow a contacté votre service Relations en vue d'un éventuel partenariat. Le magazine dispose d'une base de données considérable sur les habitants de plusieurs quartiers de New York mais des rumeurs inquiétantes circulent à son sujet.",
-    "random": true,
-    "availableTime": 0,
-    "preparationTime": 0,
-    "answers": [
-      {
-        "label": "Financer l'escouade anti-troubles pour enquêter",
-        "question": "enquete",
-        "comment": "",
-        "money": -400,
-        "mood": 0
-      },
-      {
-        "label": "Accepter le partenariat",
-        "question": "",
-        "comment": "Les rumeurs semblaient infondées. Grâce à toutes les nouvelles informations partagées par Megalow, le site cible de nouveaux clients.",
-        "money": 400,
-        "mood": 20
-      },
-      {
-        "label": "Refuser le partenariat",
-        "question": "",
-        "comment": "Vous refusez le partenariat avec Megalow.",
-        "money": 0,
-        "mood": 0
-      },    ]
-  },
-  {
-    "id": "enquete",
-    "description": "L'escouade anti-trouble convoquée pour enquêter sur le magazine Megalow est maintenant prête. Où enquêter ?",
-    "random": false,
-    "availableTime": 0,
-    "preparationTime": 120,
-    "answers": [
-      {
-        "label": "Espionner les employés de Megalow chez eux",
-        "question": "",
-        "comment": "",
-        "money": 0,
-        "mood": 0
-      },
-      {
-        "label": "Infiltrer les locaux de nuit",
-        "question": "",
-        "comment": "",
-        "money": 0,
-        "mood": 0
-      }
-    ]
-  },
-  {
-    "id": "enquete_2",
-    "description": "Aucune information ne semble confirmer les rumeurs sur le magazine local Megalow. Acceptez-vous le partenariat et ainsi bénéficier de la base de données du magazine ?",
-    "random": false,
-    "availableTime": 0,
-    "preparationTime": 120
-,
-    "answers": [
-      {
-        "label": "Accepter le partenariat",
-        "question": "",
-        "comment": "Grâce aux informations partagées par Megalow, le site cible de nouveaux clients.",
-        "money": 400,
-        "mood": 20
-      },
-      {
-        "label": "Refuser le partenariat",
-        "question": "",
-        "comment": "Vous refusez le partenariat avec Megalow.",
-        "money": 0,
-        "mood": 0
-      }
-    ]
-  },
-  {
-    "id": "conference_espace",
-    "description": "Le département Marketing voit grand. Le responsable vous suggère une conférence de presse depuis l'espace. De quoi impressionner la galerie.",
-    "random": true,
-    "availableTime": 0,
-    "preparationTime": 0,
-    "answers": [
-      {
-        "label": "Décollez pour les étoiles",
-        "question": "",
-        "comment": "Jenny vous recontactera quand tout sera prêt.",
-        "money": -1000,
-        "mood": 20
-      },
-      {
-        "label": "Garder les têtes sur les épaules",
-        "question": "",
-        "comment": "",
-        "money": 0,
-        "mood": 0
-      }
-    ]
-  },
-  {
-    "id": "event_conference_espace",
-    "description": "Tous est enfin prêt. Dans quelques minutes se tiendra la première conférence de presse en direct de l'espace. Toujours à vos côtés, Jenny s'assure que tout se passe bien. C'est elle qui vous donne le top départ de votre discours. RETOUR LIGNE. "Nous sommes fiers de vous parler depuis les étoiles ce soir. Nos projets pour l'avenir sont fabuleux."
-    "random": false,
-    "availableTime": 0,
-    "preparationTime": 0,
-    "answers": [
-      {
-        "label": "Annoncer un nouveau projet",
-        "question": "event_conference_espace_2",
-        "comment": "",
-        "money": ,
-        "mood":
-      },
-      {
-        "label": "Se laisser absorber par le paysage",
-        "question": "event_conference_espace_3",
-        "comment": "",
-        "money": 0,
-        "mood": 0
-      }
-    ]
-  },
-  {
-    "id": "event_conference_espace_2",
-    "description": "Que Ligolove se porte bien ne semble pas intéresser le public. C'est à peine si l'annonce d'un  RETOUR LIGNE. Les minutes passent, Mickaël vit un rêve éveillé à bord de son bureau astro-propulsé. Le sourire confiant de Jenny rassure le jeune homme. Mais un problème technique vint perturber la communication avec la Terre.",
-    "random": false,
-    "availableTime": 0,
-    "preparationTime": 0,
-    "answers": [
-      {
-        "label": "Convaincre l'équipe technique de tenter un rétablissement de la communication",
-        "question": "",
-        "comment": "La confusion règne dans le bureau et le ton monte avec votre équipe.",
-        "money": ,
-        "mood": -40
-      },
-      {
-        "label": "Se suffire de ce moment dans les étoiles et repartir sur Terre",
-        "question": "",
-        "comment": "Le chemin du retour vers New York est marqué par vos souvenirs de ce voyage extraordinaire.",
-        "money": 0,
-        "mood": 40
-      }
-    ]
-  },
-  {
-    "id": "event_conference_espace_3",
-    "description": "Vous restez coi face au paysage qui s'étend devant vous. Les étoiles, le soleil et la Terre. Tout vous fait relativiser et vous rappelle votre enfance à regarder le ciel à travers votre télescope. Et tant pis si les milliers de personnes qui vous regardent à travers leur écran ne comprennent pas votre long silence.",
-    "random": false,
-    "availableTime": 0,
-    "preparationTime": 0,
-    "answers": [
-      {
-        "label": "Repartir sur Terre",
-        "question": "",
-        "comment": "",
-        "money": -2000,
-        "mood": 90
-      }
-    ]
-  },
-  {
-    "id": "aperitif",
-    "description": "Jenny semble préoccupée. Elle vous explique que son boulot lui prend beaucoup de temps et ne la passionne plus.",
-    "random": true,
-    "availableTime": 0,
-    "preparationTime": 0,
-    "answers": [
-      {
-        "label": "Lui proposer d'en parler autour d'un apéritif entre amis",
-        "question": "",
-        "comment": "Vous passez une des plus belles soirées de votre vie. Vous découvrez une personne formidable, attentionnée et amusante.",
-        "money": 0,
-        "mood": 70
-      },
-      {
-        "label": "Lui accorder une prime exceptionnelle",
-        "question": "",
-        "comment": "Jenny se montre reconnaissante mais déçue.",
-        "money": -500,
-        "mood": 0
-      }
-    ]
-  },
-  {
-    "id": "event_noel",
-    "description": "C'est Noël ! A cette occasion, l'entreprise a pour habitude d'organiser une grande fête en l'honneur des salariés et de leurs enfants, qui reçoivent de nombreux cadeaux. Ce moment festif s'organise dans des locaux dédiés autour d'un immense buffet. Si l'événement coûte parfois cher à l'entreprise, votre oncle tenait à cet événement.",
-    "random": true,
-    "availableTime": 0,
-    "preparationTime": 0,
-    "answers": [
-      {
-        "label": "Organiser le Noël de l'entreprise",
-        "question": "event_noel_2",
-        "comment": "",
-        "money": -2000,
-        "mood": 70
+{
+  "money": 5000,
+  "mood": 70,
+  "intro": "",
+  "win_money": 0, 
+  "lose_money": 10000,
+  "end_win": "",
+  "end_lose": "",
+  "questions": [
+    {
+      "id": "recruitment",
+      "description": "Le département Management des équipes innovantes vous propose de recruter une équipe de meeters, chargée de mettre en contact des membres dont le profil est compatible. Que décidez-vous ?",
+      "random": true,
+      "availableTime": 0,
+      "preparationTime": 0,
+      "answers": [
+        {
+          "label": "Recruter des meeters",
+          "question": "",
+          "comment": "Une toute équipe dédiée à la mise en relation des inscrits a été constituée, malgré une quantité astronomique de papiers à remplir. .",
+          "money": 200,
+          "mood": -20
+        },
+        {
+          "label": "Refuser la proposition",
+          "question": "",
+          "comment": "Vous refusez la proposition et évitez ainsi tout un tas de paperasse.",
+          "money": 0,
+          "mood": 20
+        }
+      ]
     },
     {
-        "label": "Ne pas organiser le Noël de l'entreprise",
-        "question": "",
-        "comment": "A l'annonce de cette nouvelle, les salariés expriment leur mécontentement. Un mouvement social s'organise. Mais votre décision est prise, il n'y aura pas de Noël d'entreprise cette année.",
-        "money": -1000,
-        "mood": -30
-      }
-    ]
-  },
-  {
-    "id": "event_noel_2",
-    "description": "Tous les salariés mettent la main à la patte pour organiser ce Noël. La fête bat son plein. Jenny et vos collègues vous invitent à leur table. Mais il vous est difficile de résister à l'appel de la fête et peut-être que vos salariés apprécieront votre chorégraphie.",
-    "random": false,
-    "availableTime": 0,
-    "preparationTime": 0,
-    "answers": [
-      {
-        "label": "Monter sur la scène centrale et danser",
-        "question": "",
-        "comment": "Personne ne se doutait de vos talents pour la danse. Vous êtes rejoints sur scène et la fête ne finira que très tard. Vous payez le taxi à chacun de vos salariés venus ce soir-là. Heureusement, vous n'avez pas oublié d'appeler le Père Noël pour distribuer les cadeaux aux enfants.",
-        "money": -1000,
-        "mood": 50
+      "id": "algorithm",
+      "description": "Le département Recherche technique et rigoureuse a mis au point un tout nouvel algorithme de compatibilité. Celui-ci permettra une meilleure correspondance entre les profils de membres compatibles. Mais les équipes ont besoin de fonds pour le finaliser.",
+      "random": true,
+      "availableTime": 0,
+      "preparationTime": 0,
+      "answers": [
+        {
+          "label": "Investir dans l'algorithme 2.0",
+          "question": "",
+          "comment": "L'algorithme s'est avéré raté et a dû être retiré du site en urgence.",
+          "money": -300,
+          "mood": -30
+        },
+        {
+          "label": "Ne pas investir",
+          "question": "",
+          "comment": "Vous préférez ne pas investir dans le futur.",
+          "money": 0,
+          "mood": 0
+        }
+      ]
     },
     {
-        "label": "Répondre à l'invitation",
-        "question": "",
-        "comment": "",
-        "money": 0,
-        "mood": 60
-      }
-    ]
-  },
-  {
-    "id": "event_noel_3",
-    "description": "Passer du temps auprès de vos collègues vous fait bien plus de bien que vous ne l'imaginiez. Et la compagnie de Jenny est toujours un bonheur. Vous lui proposer de la raccompagner en fin de soirée, ce qu'elle accepte. Mais une idée vous vient en chemin.",
-    "random": false,
-    "availableTime": 0,
-    "preparationTime": 0,
-    "answers": [
-      {
-        "label": "Proposer à Jenny un tour d'hélicoptère de nuit au-dessus de New York",
-        "question": "event_noel_4",
-        "comment": "",
-        "money": 0,
-        "mood": 0
+      "id": "restaurant",
+      "description": "Jenny aimerait organiser un repas pour souder votre équipe. Acceptez-vous de libérer votre jeudi soir ?",
+      "random": true,
+      "availableTime": 0,
+      "preparationTime": 0,
+      "answers": [
+        {
+          "label": "Réserver votre soirée de jeudi pour dîner avec vos collègues",
+          "question": "",
+          "comment": "Souffler un peu fait quelque fois du bien.",
+          "money": 0,
+          "mood": 20
+        },
+        {
+          "label": "Préférer vous avancer sur votre travail",
+          "question": "",
+          "comment": "",
+          "money": 200,
+          "mood": 0
+        }
+      ]
     },
     {
-        "label": "Lui proposer de voir une comédie musicale à Broadway",
-        "question": "event_noel_5",
-        "comment": "",
-        "money": 0,
-        "mood": 0
-      }
-    ]
-  },
-  {
-    "id": "event_noel_4",
-    "description": "Depuis l'hélicoptère, New York se laisse découvrir sous un nouvel angle. La ville qui ne dort jamais brille dans vos yeux et ceux de Jenny.",
-    "random": false,
-    "availableTime": 0,
-    "preparationTime": 0,
-    "answers": [
-      {
-        "label": "Retourner chez vous et vous endormir",
-        "question": "",
-        "comment": "",
-        "money": -2000,
-        "mood": 50
-      }
-    ]
-  },
-      {
-    "id": "event_noel_5",
-    "description": "Cette pièce exceptionnelle résonne encore dans votre esprit et celui de Jenny à la sortie de la salle. Ce moment unique restera gravé dans votre mémoire pour longtemps.",
-    "random": false,
-    "availableTime": 0,
-    "preparationTime": 0,
-    "answers": [
-      {
-        "label": "Retourner chez vous et vous endormir",
-        "question": "",
-        "comment": "",
-        "money": -500,
-        "mood": 40
-      }
-    ]
-  },
-      {
-    "id": "",
-    "description": "",
-    "random": true,
-    "availableTime": 0,
-    "preparationTime": 0,
-    "answers": [
-      {
-        "label": "",
-        "question": "",
-        "comment": "",
-        "money": ,
-        "mood":
+      "id": "annuaire",
+      "description": "Le nouveau magazine local Megalow a contacté votre service Relations en vue d'un éventuel partenariat. Le magazine dispose d'une base de données considérable sur les habitants de plusieurs quartiers de New York mais des rumeurs inquiétantes circulent à son sujet.",
+      "random": true,
+      "availableTime": 0,
+      "preparationTime": 0,
+      "answers": [
+        {
+          "label": "Financer l'escouade anti-troubles pour enquêter",
+          "question": "enquete",
+          "comment": "",
+          "money": -400,
+          "mood": 0
+        },
+        {
+          "label": "Accepter le partenariat",
+          "question": "",
+          "comment": "Les rumeurs semblaient infondées. Grâce à toutes les nouvelles informations partagées par Megalow, le site cible de nouveaux clients.",
+          "money": 400,
+          "mood": 20
+        },
+        {
+          "label": "Refuser le partenariat",
+          "question": "",
+          "comment": "Vous refusez le partenariat avec Megalow.",
+          "money": 0,
+          "mood": 0
+        }
+      ]
     },
     {
-        "label": "",
-        "question": "",
-        "comment": "",
-        "money": 0,
-        "mood": 0
-      }
-    ]
-  },
-      {
-    "id": "",
-    "description": "",
-    "random": true,
-    "availableTime": 0,
-    "preparationTime": 0,
-    "answers": [
-      {
-        "label": "",
-        "question": "",
-        "comment": "",
-        "money": ,
-        "mood":
+      "id": "enquete",
+      "description": "L'escouade anti-trouble convoquée pour enquêter sur le magazine Megalow est maintenant prête. Où enquêter ?",
+      "random": false,
+      "availableTime": 0,
+      "preparationTime": 120,
+      "answers": [
+        {
+          "label": "Espionner les employés de Megalow chez eux",
+          "question": "",
+          "comment": "",
+          "money": 0,
+          "mood": 0
+        },
+        {
+          "label": "Infiltrer les locaux de nuit",
+          "question": "",
+          "comment": "",
+          "money": 0,
+          "mood": 0
+        }
+      ]
     },
     {
-        "label": "",
-        "question": "",
-        "comment": "",
-        "money": 0,
-        "mood": 0
-      }
-    ]
-  },
-      {
-    "id": "",
-    "description": "",
-    "random": true,
-    "availableTime": 0,
-    "preparationTime": 0,
-    "answers": [
-      {
-        "label": "",
-        "question": "",
-        "comment": "",
-        "money": ,
-        "mood":
+      "id": "enquete_2",
+      "description": "Aucune information ne semble confirmer les rumeurs sur le magazine local Megalow. Acceptez-vous le partenariat et ainsi bénéficier de la base de données du magazine ?",
+      "random": false,
+      "availableTime": 0,
+      "preparationTime": 120,
+      "answers": [
+        {
+          "label": "Accepter le partenariat",
+          "question": "",
+          "comment": "Grâce aux informations partagées par Megalow, le site cible de nouveaux clients.",
+          "money": 400,
+          "mood": 20
+        },
+        {
+          "label": "Refuser le partenariat",
+          "question": "",
+          "comment": "Vous refusez le partenariat avec Megalow.",
+          "money": 0,
+          "mood": 0
+        }
+      ]
     },
     {
-        "label": "",
-        "question": "",
-        "comment": "",
-        "money": 0,
-        "mood": 0
-      }
-    ]
-  },
-]
+      "id": "conference_espace",
+      "description": "Le département Marketing voit grand. Le responsable vous suggère une conférence de presse depuis l'espace. De quoi impressionner la galerie.",
+      "random": true,
+      "availableTime": 0,
+      "preparationTime": 0,
+      "answers": [
+        {
+          "label": "Décollez pour les étoiles",
+          "question": "",
+          "comment": "Jenny vous recontactera quand tout sera prêt.",
+          "money": -1000,
+          "mood": 20
+        },
+        {
+          "label": "Garder les têtes sur les épaules",
+          "question": "",
+          "comment": "",
+          "money": 0,
+          "mood": 0
+        }
+      ]
+    },
+    {
+      "id": "event_conference_espace",
+      "description": "Tous est enfin prêt. Dans quelques minutes se tiendra la première conférence de presse en direct de l'espace. Toujours à vos côtés, Jenny s'assure que tout se passe bien. C'est elle qui vous donne le top départ de votre discours. RETOUR LIGNE. Nous sommes fiers de vous parler depuis les étoiles ce soir. Nos projets pour l'avenir sont fabuleux.",
+      "random": false,
+      "availableTime": 0,
+      "preparationTime": 0,
+      "answers": [
+        {
+          "label": "Annoncer un nouveau projet",
+          "question": "event_conference_espace_2",
+          "comment": "",
+          "money": 0,
+          "mood": 0
+        },
+        {
+          "label": "Se laisser absorber par le paysage",
+          "question": "event_conference_espace_3",
+          "comment": "",
+          "money": 0,
+          "mood": 0
+        }
+      ]
+    },
+    {
+      "id": "event_conference_espace_2",
+      "description": "Que Ligolove se porte bien ne semble pas intéresser le public. C'est à peine si l'annonce d'un  RETOUR LIGNE. Les minutes passent, Mickaël vit un rêve éveillé à bord de son bureau astro-propulsé. Le sourire confiant de Jenny rassure le jeune homme. Mais un problème technique vint perturber la communication avec la Terre.",
+      "random": false,
+      "availableTime": 0,
+      "preparationTime": 0,
+      "answers": [
+        {
+          "label": "Convaincre l'équipe technique de tenter un rétablissement de la communication",
+          "question": "",
+          "comment": "La confusion règne dans le bureau et le ton monte avec votre équipe.",
+          "money": 0,
+          "mood": -40
+        },
+        {
+          "label": "Se suffire de ce moment dans les étoiles et repartir sur Terre",
+          "question": "",
+          "comment": "Le chemin du retour vers New York est marqué par vos souvenirs de ce voyage extraordinaire.",
+          "money": 0,
+          "mood": 40
+        }
+      ]
+    },
+    {
+      "id": "event_conference_espace_3",
+      "description": "Vous restez coi face au paysage qui s'étend devant vous. Les étoiles, le soleil et la Terre. Tout vous fait relativiser et vous rappelle votre enfance à regarder le ciel à travers votre télescope. Et tant pis si les milliers de personnes qui vous regardent à travers leur écran ne comprennent pas votre long silence.",
+      "random": false,
+      "availableTime": 0,
+      "preparationTime": 0,
+      "answers": [
+        {
+          "label": "Repartir sur Terre",
+          "question": "",
+          "comment": "",
+          "money": -2000,
+          "mood": 90
+        }
+      ]
+    },
+    {
+      "id": "aperitif",
+      "description": "Jenny semble préoccupée. Elle vous explique que son boulot lui prend beaucoup de temps et ne la passionne plus.",
+      "random": true,
+      "availableTime": 0,
+      "preparationTime": 0,
+      "answers": [
+        {
+          "label": "Lui proposer d'en parler autour d'un apéritif entre amis",
+          "question": "",
+          "comment": "Vous passez une des plus belles soirées de votre vie. Vous découvrez une personne formidable, attentionnée et amusante.",
+          "money": 0,
+          "mood": 70
+        },
+        {
+          "label": "Lui accorder une prime exceptionnelle",
+          "question": "",
+          "comment": "Jenny se montre reconnaissante mais déçue.",
+          "money": -500,
+          "mood": 0
+        }
+      ]
+    },
+    {
+      "id": "event_noel",
+      "description": "C'est Noël ! A cette occasion, l'entreprise a pour habitude d'organiser une grande fête en l'honneur des salariés et de leurs enfants, qui reçoivent de nombreux cadeaux. Ce moment festif s'organise dans des locaux dédiés autour d'un immense buffet. Si l'événement coûte parfois cher à l'entreprise, votre oncle tenait à cet événement.",
+      "random": true,
+      "availableTime": 0,
+      "preparationTime": 0,
+      "answers": [
+        {
+          "label": "Organiser le Noël de l'entreprise",
+          "question": "event_noel_2",
+          "comment": "",
+          "money": -2000,
+          "mood": 70
+        },
+        {
+          "label": "Ne pas organiser le Noël de l'entreprise",
+          "question": "",
+          "comment": "A l'annonce de cette nouvelle, les salariés expriment leur mécontentement. Un mouvement social s'organise. Mais votre décision est prise, il n'y aura pas de Noël d'entreprise cette année.",
+          "money": -1000,
+          "mood": -30
+        }
+      ]
+    },
+    {
+      "id": "event_noel_2",
+      "description": "Tous les salariés mettent la main à la patte pour organiser ce Noël. La fête bat son plein. Jenny et vos collègues vous invitent à leur table. Mais il vous est difficile de résister à l'appel de la fête et peut-être que vos salariés apprécieront votre chorégraphie.",
+      "random": false,
+      "availableTime": 0,
+      "preparationTime": 0,
+      "answers": [
+        {
+          "label": "Monter sur la scène centrale et danser",
+          "question": "",
+          "comment": "Personne ne se doutait de vos talents pour la danse. Vous êtes rejoints sur scène et la fête ne finira que très tard. Vous payez le taxi à chacun de vos salariés venus ce soir-là. Heureusement, vous n'avez pas oublié d'appeler le Père Noël pour distribuer les cadeaux aux enfants.",
+          "money": -1000,
+          "mood": 50
+        },
+        {
+          "label": "Répondre à l'invitation",
+          "question": "",
+          "comment": "",
+          "money": 0,
+          "mood": 60
+        }
+      ]
+    },
+    {
+      "id": "event_noel_3",
+      "description": "Passer du temps auprès de vos collègues vous fait bien plus de bien que vous ne l'imaginiez. Et la compagnie de Jenny est toujours un bonheur. Vous lui proposer de la raccompagner en fin de soirée, ce qu'elle accepte. Mais une idée vous vient en chemin.",
+      "random": false,
+      "availableTime": 0,
+      "preparationTime": 0,
+      "answers": [
+        {
+          "label": "Proposer à Jenny un tour d'hélicoptère de nuit au-dessus de New York",
+          "question": "event_noel_4",
+          "comment": "",
+          "money": 0,
+          "mood": 0
+        },
+        {
+          "label": "Lui proposer de voir une comédie musicale à Broadway",
+          "question": "event_noel_5",
+          "comment": "",
+          "money": 0,
+          "mood": 0
+        }
+      ]
+    },
+    {
+      "id": "event_noel_4",
+      "description": "Depuis l'hélicoptère, New York se laisse découvrir sous un nouvel angle. La ville qui ne dort jamais brille dans vos yeux et ceux de Jenny.",
+      "random": false,
+      "availableTime": 0,
+      "preparationTime": 0,
+      "answers": [
+        {
+          "label": "Retourner chez vous et vous endormir",
+          "question": "",
+          "comment": "",
+          "money": -2000,
+          "mood": 50
+        }
+      ]
+    },
+    {
+      "id": "event_noel_5",
+      "description": "Cette pièce exceptionnelle résonne encore dans votre esprit et celui de Jenny à la sortie de la salle. Ce moment unique restera gravé dans votre mémoire pour longtemps.",
+      "random": false,
+      "availableTime": 0,
+      "preparationTime": 0,
+      "answers": [
+        {
+          "label": "Retourner chez vous et vous endormir",
+          "question": "",
+          "comment": "",
+          "money": -500,
+          "mood": 40
+        }
+      ]
+    }
+  ]
+}
