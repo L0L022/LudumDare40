@@ -1,14 +1,11 @@
 extends Control
 
-# class member variables go here, for example:
-# var a = 2
-# var b = "textvar"
+onready var b_anim = get_node("Background/anim")
 
 func _ready():
-	# Called every time the node is added to the scene.
-	# Initialization here
-	pass
-
+#	b_anim.set_speed(0.3)
+#	b_anim.queue("day")
+	b_anim.queue("start_button")
 
 func _on_startButton_pressed():
 	get_tree().change_scene("res://scenes/game.tscn")

@@ -1,6 +1,9 @@
-[gd_scene load_steps=2 format=1]
+[gd_scene load_steps=5 format=1]
 
-[ext_resource path="res://scenes/game.gd" type="Script" id=1]
+[ext_resource path="res://theme.tres" type="Theme" id=1]
+[ext_resource path="res://scenes/game.gd" type="Script" id=2]
+[ext_resource path="res://scenes/Background.tscn" type="PackedScene" id=3]
+[ext_resource path="res://assets/control/window.png" type="Texture" id=4]
 
 [node name="root" type="Control"]
 
@@ -10,74 +13,23 @@ focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
+theme/theme = ExtResource( 1 )
 margin/left = 0.0
 margin/top = 0.0
 margin/right = 0.0
 margin/bottom = 0.0
-script/script = ExtResource( 1 )
+script/script = ExtResource( 2 )
 
-[node name="timer_rand_question" type="Timer" parent="."]
+[node name="next_question" type="Timer" parent="."]
 
 process_mode = 1
 wait_time = 1.0
 one_shot = true
 autostart = false
 
-[node name="header" type="HBoxContainer" parent="."]
+[node name="Background" parent="." instance=ExtResource( 3 )]
 
-anchor/right = 1
-focus/ignore_mouse = false
-focus/stop_mouse = false
-size_flags/horizontal = 2
-size_flags/vertical = 2
-margin/left = 0.0
-margin/top = 0.0
-margin/right = 0.0
-margin/bottom = 14.0
-alignment = 0
-
-[node name="money" type="Label" parent="header"]
-
-focus/ignore_mouse = true
-focus/stop_mouse = true
-size_flags/horizontal = 2
-size_flags/vertical = 0
-margin/left = 0.0
-margin/top = 0.0
-margin/right = 44.0
-margin/bottom = 14.0
-text = "money"
-percent_visible = 1.0
-lines_skipped = 0
-max_lines_visible = -1
-
-[node name="space" type="Control" parent="header"]
-
-focus/ignore_mouse = false
-focus/stop_mouse = true
-size_flags/horizontal = 3
-size_flags/vertical = 2
-margin/left = 48.0
-margin/top = 0.0
-margin/right = 339.0
-margin/bottom = 14.0
-
-[node name="mood" type="Label" parent="header"]
-
-focus/ignore_mouse = true
-focus/stop_mouse = true
-size_flags/horizontal = 2
-size_flags/vertical = 2
-margin/left = 343.0
-margin/top = 0.0
-margin/right = 380.0
-margin/bottom = 14.0
-text = "mood"
-percent_visible = 1.0
-lines_skipped = 0
-max_lines_visible = -1
-
-[node name="center" type="CenterContainer" parent="."]
+[node name="MarginContainer" type="MarginContainer" parent="."]
 
 anchor/right = 1
 anchor/bottom = 1
@@ -89,89 +41,185 @@ margin/left = 0.0
 margin/top = 0.0
 margin/right = 0.0
 margin/bottom = 0.0
-use_top_left = false
+custom_constants/margin_right = 12
+custom_constants/margin_top = 12
+custom_constants/margin_left = 12
+custom_constants/margin_bottom = 50
 
-[node name="question" type="VBoxContainer" parent="center"]
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
 
 focus/ignore_mouse = false
 focus/stop_mouse = false
 size_flags/horizontal = 2
 size_flags/vertical = 2
-margin/left = 138.0
-margin/top = 329.0
-margin/right = 242.0
-margin/bottom = 371.0
+margin/left = 12.0
+margin/top = 12.0
+margin/right = 368.0
+margin/bottom = 650.0
 alignment = 0
 
-[node name="illustration" type="TextureFrame" parent="center/question"]
+[node name="header" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
 
-focus/ignore_mouse = true
-focus/stop_mouse = true
+focus/ignore_mouse = false
+focus/stop_mouse = false
 size_flags/horizontal = 2
 size_flags/vertical = 2
 margin/left = 0.0
 margin/top = 0.0
-margin/right = 104.0
-margin/bottom = 0.0
-stretch_mode = 0
+margin/right = 356.0
+margin/bottom = 14.0
+alignment = 0
 
-[node name="description" type="Label" parent="center/question"]
+[node name="money" type="Label" parent="MarginContainer/VBoxContainer/header"]
 
 focus/ignore_mouse = true
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 0
 margin/left = 0.0
-margin/top = 4.0
-margin/right = 104.0
-margin/bottom = 18.0
-text = "Que va tu faire ?"
+margin/top = 0.0
+margin/right = 44.0
+margin/bottom = 14.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "money"
 percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
 
-[node name="answers" type="HBoxContainer" parent="center/question"]
+[node name="space" type="Control" parent="MarginContainer/VBoxContainer/header"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 3
+size_flags/vertical = 2
+margin/left = 48.0
+margin/top = 0.0
+margin/right = 315.0
+margin/bottom = 14.0
+
+[node name="mood" type="Label" parent="MarginContainer/VBoxContainer/header"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 319.0
+margin/top = 0.0
+margin/right = 356.0
+margin/bottom = 14.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "mood"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="dialog" type="TextureFrame" parent="."]
+
+anchor/right = 1
+anchor/bottom = 1
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 0.0
+margin/bottom = 0.0
+texture = ExtResource( 4 )
+expand = true
+stretch_mode = 6
+
+[node name="question" type="VBoxContainer" parent="dialog"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = false
+size_flags/horizontal = 3
+size_flags/vertical = 3
+margin/left = 30.0
+margin/top = 140.0
+margin/right = 360.0
+margin/bottom = 650.0
+alignment = 0
+
+[node name="illustration" type="TextureFrame" parent="dialog/question"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 330.0
+margin/bottom = 0.0
+stretch_mode = 0
+
+[node name="description" type="RichTextLabel" parent="dialog/question"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 3
+size_flags/vertical = 3
+margin/left = 0.0
+margin/top = 4.0
+margin/right = 330.0
+margin/bottom = 474.0
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_colors/selection_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_selected = Color( 0, 0, 0, 1 )
+bbcode/enabled = false
+bbcode/bbcode = " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sagittis, odio ut consequat iaculis, justo velit laoreet mi, vitae fringilla dui nulla et sem. Nulla facilisi. Vestibulum eleifend est nibh, cursus imperdiet nulla congue vitae. Aliquam tristique eu libero sit amet viverra. Aenean dolor nibh, feugiat eget justo eget, tempus facilisis lacus. Fusce posuere libero magna, at auctor quam luctus quis. Nam rhoncus, nunc sed hendrerit bibendum, tortor lacus posuere tellus, efficitur dapibus mi lorem tempor dolor.
+
+Quisque vel nunc vitae quam aliquet feugiat a quis sapien. Cras ornare eu ipsum eget lobortis. Cras molestie ullamcorper dui quis elementum. Nulla in tempor justo. Duis ultrices accumsan ipsum, sit amet maximus ex. Duis convallis orci vel neque tempor rutrum eget id dui. Nullam mollis elementum luctus. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+
+Pellentesque ullamcorper orci urna, ut varius enim tempus in. Morbi quis ligula nisl. Phasellus pellentesque, arcu sit amet placerat dignissim, libero justo convallis mi, vulputate aliquet magna enim et arcu. Cras tincidunt ac odio in feugiat. Fusce vel consequat mauris. Vivamus mauris dui, volutpat et blandit vitae, porttitor eu lectus. Cras iaculis nec odio eu elementum. Cras id pretium ligula. Suspendisse potenti. Nullam vitae nisl vulputate, fringilla velit sed, vulputate ipsum. Morbi fringilla eu quam ac scelerisque. Vestibulum faucibus maximus sapien, id porttitor lacus scelerisque et. Aliquam lacinia dapibus mi, eu convallis lacus bibendum ac. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam nisi nibh, porttitor et aliquam nec, rhoncus at enim. Nunc quis laoreet dui. "
+visible_characters = -1
+percent_visible = 1.0
+
+[node name="answers" type="VBoxContainer" parent="dialog/question"]
 
 focus/ignore_mouse = false
 focus/stop_mouse = false
 size_flags/horizontal = 2
 size_flags/vertical = 2
 margin/left = 0.0
-margin/top = 22.0
-margin/right = 104.0
-margin/bottom = 42.0
+margin/top = 478.0
+margin/right = 330.0
+margin/bottom = 510.0
 alignment = 1
 
-[node name="Button" type="Button" parent="center/question/answers"]
+[node name="Button" type="Button" parent="dialog/question/answers"]
 
 focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
-margin/left = 38.0
+margin/left = 0.0
 margin/top = 0.0
-margin/right = 50.0
-margin/bottom = 20.0
+margin/right = 330.0
+margin/bottom = 14.0
 toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
+text = "Yet there are never enough. Creating your own custom controls that act just the way you want them is an obsession of almost every GUI programmer. Godot provides plenty of them, but they may not work exactly the way you want. Before contacting the developers with a pull-request to support diagonal scrollbars, at least it will be good to know how to create these controls easily from script."
 flat = false
+clip_text = true
 
-[node name="Button 2" type="Button" parent="center/question/answers"]
+[node name="Button 2" type="Button" parent="dialog/question/answers"]
 
 focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
-margin/left = 54.0
-margin/top = 0.0
-margin/right = 66.0
-margin/bottom = 20.0
+margin/left = 0.0
+margin/top = 18.0
+margin/right = 330.0
+margin/bottom = 32.0
 toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
+text = "Button test 3"
 flat = false
 
-[connection signal="timeout" from="timer_rand_question" to="." method="_on_timer_rand_question_timeout"]
+[connection signal="timeout" from="next_question" to="." method="_on_next_question_timeout"]
 
 
