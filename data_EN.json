@@ -2,7 +2,7 @@
   "money": 5000,
   "mood": 70,
   "intro": "You are Mickaël and you just inherit a company in New York from an uncle you barely knew. You are know in charge of Lovely, an online dating website. You arrive in your office, on top of a skyscraper, and this is how you realize that your life is going to change. You will have to make choices and to grant people's requests. RETOUR LIGNE. Fortunately, you are not alone in this: you have a great team to help you out! Especially Jenny, your secretarian, who doesn't leave you cold.  RETOUR LIGNE. Of course, the future of your company if important and thrilling, but don't forget... Money may not buy happiness.",
-  "win_money": 0, 
+  "win_money": 0,
   "lose_money": 10000,
   "end_win": "You company went bankrupt. It has been bought by a competitor and doesn't belong to you anymore. RETOUR LIGNE. But your life is more peaceful. You decided to see Jenny again... And you two went back to France to live together. You thought your happiness was lying in your job and your company, where you were finding love for others... You discovered it was wrong when you decided to get your life back on track. You are now close to your family and ready to build one.",
   "end_lose": "Congratulations, your company is doing great and the shareholders could not be happier. Days pass by and look the same: you answer phonecalls and emails, you plan appointments, you fill in forms... You start to wonder if that boring life really is the one you want for yourself... RETOUR LIGNE. What about trying again, and this time you keep in mind that money may not buy happiness?",
@@ -18,7 +18,7 @@
           "label": "Hire meeters",
           "question": "",
           "comment": "Despite a massive amount of administrative forms to fill in, a whole new team dedicated to connecting members has just been founded...",
-          "money": 200,
+          "money": 2000,
           "mood": -20
         },
         {
@@ -37,7 +37,7 @@
       "availableTime": 0,
       "preparationTime": 0,
       "answers": [
-        {^
+        {
           "label": "Invest in the new algorithm 2.0",
           "question": "",
           "comment": "Bad news. Something got wrong with the algorithm and it had to be urgently removed from the website! s'est avéré raté et a dû être retiré du site en urgence.",
@@ -71,7 +71,7 @@
           "label": "Decline to get some work done on Thursday night",
           "question": "",
           "comment": "",
-          "money": 200,
+          "money": 2500,
           "mood": 0
         }
       ]
@@ -94,7 +94,7 @@
           "label": "Decline to get some work done",
           "question": "",
           "comment": "",
-          "money": 500,
+          "money": 1000,
           "mood": 0
         }
       ]
@@ -110,14 +110,14 @@
           "label": "Pay a detective squad to investigate that matter",
           "question": "enquete",
           "comment": "",
-          "money": -400,
+          "money": -500,
           "mood": 0
         },
         {
           "label": "Accept the partnership with no further investigations",
           "question": "",
           "comment": "The rumours seemed to be unfounded. Thanks to all the new data shared by Megalow, the website now aims at new potential customers.",
-          "money": 400,
+          "money": 3000,
           "mood": 20
         },
         {
@@ -138,14 +138,14 @@
       "answers": [
         {
           "label": "Spy on the Megalow employees at their places",
-          "question": "",
+          "question": "enquete_2",
           "comment": "",
           "money": 0,
           "mood": 0
         },
         {
           "label": "Sneak in the office at night",
-          "question": "",
+          "question": "enquete_2",
           "comment": "",
           "money": 0,
           "mood": 0
@@ -163,7 +163,7 @@
           "label": "Accept the partnership",
           "question": "",
           "comment": "Thanks to all the new data shared by Megalow, the website now aims at new potential customers.",
-          "money": 400,
+          "money": 3000,
           "mood": 20
         },
         {
@@ -184,8 +184,8 @@
       "answers": [
         {
           "label": "Take off to the stars!",
-          "question": "",
-          "comment": "Jenny will inform you when everything is ready.",
+          "question": "event_conference_espace",
+          "comment": "",
           "money": -1000,
           "mood": 20
         },
@@ -194,7 +194,7 @@
           "question": "",
           "comment": "",
           "money": 0,
-          "mood": 0
+          "mood": -30
         }
       ]
     },
@@ -244,7 +244,7 @@
         }
       ]
     },
-   {
+    {
       "id": "event_conference_espace_3",
       "description": "You feel small and stay quiet as you admire the scenery: the stars, the Sun and the Earth are all around you. They remind you of your childhood, when you used to look at the sky through your telescope. And if thousands of people stare at you through their screen without understanding why is there such a long silence in your speech, that's too bad for them.",
       "random": false,
@@ -278,7 +278,7 @@
           "label": "Give her a remarkable bonus",
           "question": "",
           "comment": "Jenny seems grateful but disappointed.",
-          "money": -500,
+          "money": -1000,
           "mood": 0
         }
       ]
@@ -340,15 +340,15 @@
           "label": "Suggest a helicopter night tour above New York",
           "question": "event_noel_4",
           "comment": "",
-          "money": 0,
-          "mood": 0
+          "money": -2000,
+          "mood": 50
         },
         {
           "label": "Suggest a Broadway musical",
           "question": "event_noel_5",
           "comment": "",
-          "money": 0,
-          "mood": 0
+          "money": -1000,
+          "mood": 40
         }
       ]
     },
@@ -363,8 +363,8 @@
           "label": "Go back home to sleep",
           "question": "",
           "comment": "",
-          "money": -2000,
-          "mood": 50
+          "money": 0,
+          "mood": 0
         }
       ]
     },
@@ -379,13 +379,13 @@
           "label": "Go back home to sleep",
           "question": "",
           "comment": "",
-          "money": -500,
-          "mood": 40
+          "money": 0,
+          "mood": 0
         }
       ]
     },
-	{
-      "id": "event_organisation_entreprise",
+    {
+      "id": "event_organisation",
       "description": "An idea just came across you. It has been ages since the last time the internal organization of your company evolved. Maybe changing it could improve the performance and give some motivation to your employees. First of all, what about the wages?",
       "random": true,
       "availableTime": 0,
@@ -393,29 +393,21 @@
       "answers": [
         {
           "label": "Reduce wages in one way or  another",
-          "question": "event_organisation_entreprise_2",
+          "question": "event_organisation_2",
           "comment": "",
           "money": 1000,
           "mood": -20
         },
-		{
+        {
           "label": "Increase wages to give the employees some motivation",
-          "question": "event_organisation_4",
+          "question": "event_organisation_3",
           "comment": "",
           "money": -1000,
           "mood": 30
-        },
-		{
-          "label": "Increase wages to give the employees some motivation",
-          "question": "event_organisation_4",
-          "comment": "",
-          "money": 0,
-          "mood": 0
         }
       ]
-      ]
     },
-	{
+    {
       "id": "event_organisation_2",
       "description": "The employees are very unhappy about the wage cut. Now, let's see what can be done with the offices.",
       "random": false,
@@ -424,45 +416,45 @@
       "answers": [
         {
           "label": "Renovate all offices",
-          "question": "event_organisation_5",
+          "question": "event_organisation_4",
           "comment": "",
           "money": -1000,
           "mood": 30
         },
-		{
+        {
           "label": "Let the offices the way they are",
-          "question": "event_organisation_6",
+          "question": "event_organisation_5",
           "comment": "",
           "money": 0,
           "mood": -10
         }
       ]
     },
-	{
-      "id": "event_organisation_4",
+    {
+      "id": "event_organisation_3",
       "description": "The employees are pleased with the new offices. Some of them even say that you might be the best boss in the country! Jenny can't hide how pride of you she is. Now, let's see what can be done with the offices.",
-      "random": true,
+      "random": false,
       "availableTime": 0,
       "preparationTime": 0,
       "answers": [
         {
           "label": "Renovate all offices",
-          "question": "event_organisation_5",
+          "question": "event_organisation_4",
           "comment": "",
           "money": -1000,
           "mood": 30
         },
-		{
+        {
           "label": "Let the offices the way they are",
-          "question": "event_organisation_6",
+          "question": "event_organisation_5",
           "comment": "",
           "money": 0,
           "mood": -10
         }
       ]
     },
-	{
-      "id": "event_organisation_5",
+    {
+      "id": "event_organisation_4",
       "description": "The whole building has been renovated and reorganized. Finally, the coffee machine on the 24th floor is working! It feels so great working in a new environment. Maybe it's just you, but it seems that everybody is more smiling today. Especially Jenny who seems to appreciate your part in improving the employees well-being. RETOUR LIGNE. What about going further in that direction?",
       "random": false,
       "availableTime": 0,
@@ -475,17 +467,17 @@
           "money": -500,
           "mood": 30
         },
-		{
+        {
           "label": "Arrange one floor dedicated to relaxation",
           "question": "event_organisation_8",
           "comment": "",
           "money": -1000,
-         "mood": 30
+          "mood": 30
         }
       ]
     },
-	{
-      "id": "event_organisation_6",
+    {
+      "id": "event_organisation_5",
       "description": "Renovating the building can wait. Jenny doesn't even try to hide her disappointment. RETOUR LIGNE. What about trying to improve the employees well-being?",
       "random": false,
       "availableTime": 0,
@@ -493,22 +485,22 @@
       "answers": [
         {
           "label": "Organize monthly evenings in that fancy bar located at the corner of Fifth Avenue",
-          "question": "event_organisation_7",
+          "question": "event_organisation_6",
           "comment": "",
           "money": -500,
           "mood": 30
         },
-		{
+        {
           "label": "Arrange one floor dedicated to relaxation",
-          "question": "event_organisation_8",
+          "question": "event_organisation_7",
           "comment": "",
           "money": -1000,
           "mood": 30
         }
       ]
     },
-	{
-      "id": "event_organisation_7",
+    {
+      "id": "event_organisation_6",
       "description": "The first monthly evening was wonderful! Once again, Jenny surprised you by being such a fascinating woman.  You also took some time to talk with your colleagues, which was very enjoyable. RETOUR LIGNE. It is now time to begin a major project!",
       "random": false,
       "availableTime": 0,
@@ -521,14 +513,14 @@
           "money": -1500,
           "mood": 20
         },
-		{
+        {
           "label": "Finance a scientific committee to identify matching profiles that would be so compatible they would marry even before seeing each other",
           "question": "",
           "comment": "That's unbelievable! Some members trust our experts so much that they accepted getting married to somebody they have not met yet. So this is it, science could find love for you?",
-          "money": -500,
+          "money": -1000,
           "mood": 10
         },
-		{
+        {
           "label": "The price doesn't matter: you are offering a round-the-world trip to all of your employees!",
           "question": "",
           "comment": "You're really doing this, aren't you? Going for a round-the-world trip with 400 colleagues and employees! Who would have thought this was going to happend some day? Not you! But what matters the most for you right now is Jenny, who you are getting close to.",
@@ -537,8 +529,8 @@
         }
       ]
     },
-	{
-      "id": "event_organisation_8",
+    {
+      "id": "event_organisation_7",
       "description": "Pool, cushions, hammockes, free sweets and game consoles are all settled in the relaxation floor! Only one detail remains: asking the three employees at the other side of the room to lower the volume when they watch La La Land. RETOUR LIGNE. It is now time to begin a major project!",
       "random": false,
       "availableTime": 0,
@@ -547,17 +539,18 @@
         {
           "label": "Finance an interstellar signals launcher to send love messages to infinity and beyond",
           "question": "",
-          "comment": "It was hard work, but worth it: Lovely is the first and only company who provides a possibility of sending love messages into space through their Love Among The Stars service. And who knows, maybe one day an alien will answer.",          "money": -1500,
+          "comment": "It was hard work, but worth it: Lovely is the first and only company who provides a possibility of sending love messages into space through their Love Among The Stars service. And who knows, maybe one day an alien will answer.",
+          "money": -1500,
           "mood": 20
         },
-		{
+        {
           "label": "Finance a scientific committee to identify matching profiles that would be so compatible they would marry even before seeing each other",
           "question": "",
           "comment": "That's unbelievable! Some members trust our experts so much that they accepted getting married to somebody they have not met yet. So this is it, science could find love for you?",
           "money": -500,
           "mood": 10
         },
-		{
+        {
           "label": "The price doesn't matter: you are offering a round-the-world trip to all of your employees!",
           "question": "",
           "comment": "You're really doing this, aren't you? Going for a round-the-world trip with 400 colleagues and employees! Who would have thought this was going to happend some day? Not you! But what matters the most for you right now is Jenny, who you are getting close to.",
@@ -566,7 +559,7 @@
         }
       ]
     },
-	{
+    {
       "id": "event_soiree_rooftop",
       "description": "Your team informs you that a rooftop party will take place tonight in a building next to the company. They ask you to join them.",
       "random": true,
@@ -580,16 +573,16 @@
           "money": -500,
           "mood": 10
         },
-		{
+        {
           "label": "Stay at work",
-          "question": "event_soiree_rooftop_3",
+          "question": "",
           "comment": "",
-          "money": 0,
+          "money": 1000,
           "mood": -30
         }
       ]
     },
-	{
+    {
       "id": "event_soiree_rooftop_2",
       "description": "It feels good to let go. There is only one street between this place and your office. It's just as if you were mocking your company.",
       "random": false,
@@ -598,21 +591,21 @@
       "answers": [
         {
           "label": "Dive into the jacuzzi",
-          "question": "event_soiree_rooftop_4",
+          "question": "event_soiree_rooftop_3",
           "comment": "",
           "money": 0,
           "mood": 20
         },
-		{
+        {
           "label": "Go get a drink",
-          "question": "event_soiree_rooftop_5",
+          "question": "event_soiree_rooftop_4",
           "comment": "",
           "money": 0,
           "mood": 10
         }
       ]
     },
-	{
+    {
       "id": "event_soiree_rooftop_3",
       "description": "The warm water and the laughing crowd make you happy. Jenny looks amused, it's true that you don't often let go at work. RETOUR LIGNE. Comfortably sat on the couch, waiting to dry, you start talking with Jenny. As you discuss, she puts things into perspective about your company that seems to control your life. Are you really happy since you got this position? Not being rich doesn't mean failing.",
       "random": false,
@@ -628,10 +621,10 @@
         }
       ]
     },
-	{
+    {
       "id": "event_soiree_rooftop_4",
       "description": "You find Jenny by the bar. It's the perfect occasion to get to know each other better. As you discuss, she puts things into perspective about your company that seems to control your life. Are you really happy since you got this position? Not being rich doesn't mean failing.",
-      "random": true,
+      "random": false,
       "availableTime": 0,
       "preparationTime": 0,
       "answers": [
@@ -644,7 +637,7 @@
         }
       ]
     },
-	{
+    {
       "id": "design",
       "description": "The Art Department recommends you to change the whole website design: from the logo to the headline. It is expensive but it is time to aligne the company to its competitors.",
       "random": true,
@@ -658,7 +651,7 @@
           "money": -800,
           "mood": 30
         },
-		{
+        {
           "label": "Keep the website the way it is",
           "question": "",
           "comment": "Fine, the website may not be that modern anymore, but it still does the job! That's what matter, right?",
@@ -667,7 +660,7 @@
         }
       ]
     },
-	{
+    {
       "id": "event_actionnaire",
       "description": "There we are, this is the first shareholders assembly since you got your position in the company. You don't know anything about that but your team gave you great tips. You will be talking to major shareholders and they need to be convinced by the company's figures and your future projects.",
       "random": true,
@@ -681,7 +674,7 @@
           "money": 0,
           "mood": 0
         },
-		{
+        {
           "label": "Try a joke because they all seem tense",
           "question": "event_actionnaire_3",
           "comment": "",
@@ -690,7 +683,7 @@
         }
       ]
     },
-	{
+    {
       "id": "event_actionnaire_2",
       "description": "The shareholders seem satisfied by the figures but your projects are still too unclear for them. They ask you a lot more than just that.",
       "random": false,
@@ -704,7 +697,7 @@
           "money": -3000,
           "mood": -40
         },
-		{
+        {
           "label": "Promise you will do your best",
           "question": "",
           "comment": "They seem happy with that answer.",
@@ -713,7 +706,7 @@
         }
       ]
     },
-	{
+    {
       "id": "event_actionnaire_3",
       "description": "The shareholders don't appreciate at all this lack of seriousness. Some of them even express discontent.",
       "random": false,
@@ -727,7 +720,7 @@
           "money": -3000,
           "mood": -40
         },
-		{
+        {
           "label": "Get a grip on yourself despite your disappointment",
           "question": "",
           "comment": "The shareholders seem satisfied.",
@@ -735,22 +728,6 @@
           "mood": -50
         }
       ]
-    },
-	{
-      "id": "",
-      "description": "",
-      "random": true,
-      "availableTime": 0,
-      "preparationTime": 0,
-      "answers": [
-        {
-          "label": "",
-          "question": "",
-          "comment": "",
-          "money": 0,
-          "mood": 0
-        }
-      ]
-    },
+    }
   ]
 }

@@ -190,7 +190,7 @@
           "mood": 20
         },
         {
-          "label": "Garder les têtes sur les épaules",
+          "label": "Garder la tête sur les épaules",
           "question": "",
           "comment": "Vous commencez à regretter votre décision. Tant pis.",
           "money": 0,
@@ -213,7 +213,7 @@
           "mood": 0
         },
         {
-          "label": "Se laisser absorber par le paysage",
+          "label": "Se laisser absorber par la Voie Lactée",
           "question": "event_conference_espace_3",
           "comment": "",
           "money": 0,
@@ -278,14 +278,14 @@
           "label": "Lui accorder une prime exceptionnelle",
           "question": "",
           "comment": "Jenny se montre reconnaissante mais déçue.",
-          "money": -500,
+          "money": -1000,
           "mood": 0
         }
       ]
     },
     {
       "id": "event_noel",
-      "description": "C'est Noël ! A cette occasion, l'entreprise a pour habitude d'organiser une grande fête en l'honneur des salariés et de leurs enfants, qui reçoivent de nombreux cadeaux. Ce moment festif s'organise dans des locaux dédiés autour d'un immense buffet. Si l'événement coûte parfois cher à l'entreprise, votre oncle tenait à cet événement.",
+      "description": "C'est Noël ! À cette occasion, l'entreprise a pour habitude d'organiser une grande fête en l'honneur des salariés et de leurs enfants, qui reçoivent de nombreux cadeaux. Ce moment festif s'organise dans des locaux dédiés autour d'un immense buffet. Si l'événement coûte parfois cher à l'entreprise, votre oncle tenait à cet événement.",
       "random": true,
       "availableTime": 0,
       "preparationTime": 0,
@@ -340,15 +340,15 @@
           "label": "Proposer à Jenny un tour d'hélicoptère de nuit au-dessus de New York",
           "question": "event_noel_4",
           "comment": "",
-          "money": 0,
-          "mood": 0
+          "money": -2000,
+          "mood": 50
         },
         {
           "label": "Lui proposer de voir une comédie musicale à Broadway",
           "question": "event_noel_5",
           "comment": "",
-          "money": 0,
-          "mood": 0
+          "money": -1000,
+          "mood": 40
         }
       ]
     },
@@ -363,8 +363,8 @@
           "label": "Retourner chez vous et vous endormir",
           "question": "",
           "comment": "",
-          "money": -2000,
-          "mood": 50
+          "money": 0,
+          "mood": 0
         }
       ]
     },
@@ -379,8 +379,8 @@
           "label": "Retourner chez vous et vous endormir",
           "question": "",
           "comment": "",
-          "money": -500,
-          "mood": 40
+          "money": 0,
+          "mood": 0
         }
       ]
     },
@@ -517,7 +517,7 @@
           "label": "Financer un comité scientifique pour leur permettre d'identifier des profils tellement compatibles qu'ils se marieront sans s'être jamais vus auparavant",
           "question": "",
           "comment": "C'est incroyable ! Des membres du site ont fait confiance à vos experts et ont accepté de se marier avec quelqu'un qu'ils n'ont jamais vu. La science serait-elle capable de trouver l'amour pour vous ?",
-          "money": -500,
+          "money": -1000,
           "mood": 10
         },
         {
@@ -714,10 +714,10 @@
       "preparationTime": 0,
       "answers": [
         {
-          "label": "Montrer votre mécontentement face à leur sérieux morose",
+          "label": "Sur un coup de tête, mettre la clé sous la porte",
           "question": "",
-          "comment": "Les actionnaires sont vexés ou pas assez convaincus.",
-          "money": -3000,
+          "comment": "",
+          "money": -10000,
           "mood": -40
         },
         {
