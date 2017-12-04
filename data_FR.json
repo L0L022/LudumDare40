@@ -2,7 +2,7 @@
   "money": 5000,
   "mood": 70,
   "intro": "Vous êtes Mickaël et venez d'hériter d'une entreprise new-yorkaise qui appartenait à un oncle dont vous connaissiez à peine l'existence. Vous voici donc à la tête de Lovely, un site de rencontre en ligne. En débarquant dans le bureau surplombant les grattes-ciels, vous comprenez que votre vie va désormais changer. Il va vous falloir prendre des décisions et répondre aux requêtes de tout un tas de personnes. RETOUR LIGNE. Heureusement, votre nouvelle équipe est prête à vous aider. Vous n'êtes d'ailleurs pas infaillible face au charme de Jenny, votre secrétaire. RETOUR LIGNE. Si l'avenir de votre entreprise est important, n'oubliez malgré tout pas que l'argent ne fait pas forcément le bonheur",
-  "win_money": 0, 
+  "win_money": 0,
   "lose_money": 10000,
   "end_win": "L'entreprise a fait faillite. Rachetée par un concurrent, elle ne vous appartient désormais plus. RETOUR LIGNE. Mais votre vie est plus paisible. Vous avez décidé de revoir Jenny, avec qui vous vivez désormais en France. Vous qui pensiez trouver le bonheur à la tête d'une grande entreprise, vous qui aidiez les autres à trouver l'amour, vous avez décidé de reprendre votre vie en main. Vous revoici désormais proche de votre famille, prêt à en fonder une.",
   "end_lose": "Félicitations, votre entreprise se porte à merveille et les actionnaires sont ravis. Les jours passent et se ressemblent, vous répondez à des appels et des mails, plannifiez des rendez-vous et remplissez des tas de feuilles. Vous commencez à vous demander si cette vie un peu morose est celle que vous vouliez vraiment... RETOUR LIGNE. N'hésitez pas à retenter l'aventure, en gardant cette fois-ci en tête que l'argent ne fait pas forcément le bonheur.",
@@ -17,8 +17,8 @@
         {
           "label": "Recruter des meeters",
           "question": "",
-          "comment": "Une toute équipe dédiée à la mise en relation des inscrits a été constituée, malgré une quantité astronomique de papiers à remplir.",
-          "money": 200,
+          "comment": "Une toute nouvelle équipe dédiée à la mise en relation des inscrits a été constituée, malgré une quantité astronomique de papiers à remplir.",
+          "money": 2000,
           "mood": -20
         },
         {
@@ -71,7 +71,7 @@
           "label": "Préférer vous avancer sur votre travail",
           "question": "",
           "comment": "",
-          "money": 200,
+          "money": 2500,
           "mood": 0
         }
       ]
@@ -94,7 +94,7 @@
           "label": "Préférer vous avancer sur votre travail",
           "question": "",
           "comment": "",
-          "money": 500,
+          "money": 1000,
           "mood": 0
         }
       ]
@@ -110,14 +110,14 @@
           "label": "Financer l'escouade anti-troubles pour enquêter",
           "question": "enquete",
           "comment": "",
-          "money": -400,
+          "money": -500,
           "mood": 0
         },
         {
           "label": "Accepter le partenariat",
           "question": "",
           "comment": "Les rumeurs semblaient infondées. Grâce à toutes les nouvelles informations partagées par Megalow, le site cible de nouveaux clients.",
-          "money": 400,
+          "money": 3000,
           "mood": 20
         },
         {
@@ -138,14 +138,14 @@
       "answers": [
         {
           "label": "Espionner les employés de Megalow chez eux",
-          "question": "",
+          "question": "enquete_2",
           "comment": "",
           "money": 0,
           "mood": 0
         },
         {
           "label": "Infiltrer les locaux de nuit",
-          "question": "",
+          "question": "enquete_2",
           "comment": "",
           "money": 0,
           "mood": 0
@@ -163,7 +163,7 @@
           "label": "Accepter le partenariat",
           "question": "",
           "comment": "Grâce aux informations partagées par Megalow, le site cible de nouveaux clients.",
-          "money": 400,
+          "money": 3000,
           "mood": 20
         },
         {
@@ -184,17 +184,17 @@
       "answers": [
         {
           "label": "Décollez pour les étoiles",
-          "question": "",
-          "comment": "Jenny vous recontactera quand tout sera prêt.",
+          "question": "event_conference_espace",
+          "comment": "",
           "money": -1000,
           "mood": 20
         },
         {
           "label": "Garder les têtes sur les épaules",
           "question": "",
-          "comment": "",
+          "comment": "Vous commencez à regretter votre décision. Tant pis.",
           "money": 0,
-          "mood": 0
+          "mood": -30
         }
       ]
     },
@@ -384,8 +384,8 @@
         }
       ]
     },
-	{
-      "id": "event_organisation_entreprise",
+    {
+      "id": "event_organisation",
       "description": "Une idée vous vient subitement. La structure de votre entreprise n'ayant pas évolué depuis un long moment, peut-être qu'un coup de neuf pourrait améliorer le chiffre d'affaire et remotiver vos salariés. Dans un premier temps, que dire des salaires ?",
       "random": true,
       "availableTime": 0,
@@ -393,29 +393,21 @@
       "answers": [
         {
           "label": "Les salaires sont globalement trop élevés, il faut les réduire",
-          "question": "event_organisation_entreprise_2",
+          "question": "event_organisation_2",
           "comment": "",
           "money": 1000,
-          "mood": -20
+          "mood": -30
         },
-		{
+        {
           "label": "Une augmentation remotiverait peut-être les troupes !",
-          "question": "event_organisation_4",
+          "question": "event_organisation_3",
           "comment": "",
           "money": -1000,
-          "mood": 30
-        },
-		{
-          "label": "Une augmentation remotiverait peut-être les troupes !",
-          "question": "event_organisation_4",
-          "comment": "",
-          "money": 0,
-          "mood": 0
+          "mood": 40
         }
       ]
-      ]
     },
-	{
+    {
       "id": "event_organisation_2",
       "description": "La nouvelle passe mal. Il faut maintenant s'occuper des locaux.",
       "random": false,
@@ -424,45 +416,45 @@
       "answers": [
         {
           "label": "Rénover les locaux",
-          "question": "event_organisation_5",
+          "question": "event_organisation_4",
           "comment": "",
           "money": -1000,
           "mood": 30
         },
-		{
+        {
           "label": "Laisser les locaux dans leur état",
-          "question": "event_organisation_6",
+          "question": "event_organisation_5",
           "comment": "",
           "money": 0,
           "mood": -10
         }
       ]
     },
-	{
-      "id": "event_organisation_4",
+    {
+      "id": "event_organisation_3",
       "description": "Les salariés sont enchantés. Certains vous imaginent même comme le meilleur patron du pays. Jenny est fière de vous. Il faut maintenant s'occuper des locaux.",
-      "random": true,
+      "random": false,
       "availableTime": 0,
       "preparationTime": 0,
       "answers": [
         {
           "label": "Rénover les locaux",
-          "question": "event_organisation_5",
+          "question": "event_organisation_4",
           "comment": "",
           "money": -1000,
           "mood": 30
         },
-		{
+        {
           "label": "Laisser les locaux dans leur état",
-          "question": "event_organisation_6",
+          "question": "event_organisation_5",
           "comment": "",
           "money": 0,
           "mood": -10
         }
       ]
     },
-	{
-      "id": "event_organisation_5",
+    {
+      "id": "event_organisation_4",
       "description": "Tout le bâtiment a été rénové et réaménagé. La cafetière du 24ème étage fonctionne enfin ! C'est dingue ce que ça fait du bien de travailler dans un nouveau cadre. Vous ne savez pas si vous vous faites des idées ou non, mais il semblerait que les salariés soient plus souriant depuis. Et c'est particulièrement le cas de Jenny qui apprécie votre implication dans le bien-être de vos salariés. RETOUR LIGNE. Et si on animait un peu plus la vie au boulot ?",
       "random": false,
       "availableTime": 0,
@@ -470,22 +462,22 @@
       "answers": [
         {
           "label": "Organiser des soirées mensuelles dans le bar à l'angle de la 5ème avenue",
-          "question": "event_organisation_7",
+          "question": "event_organisation_6",
           "comment": "",
           "money": -500,
           "mood": 30
         },
-		{
+        {
           "label": "Aménager un étage dédié à la détente",
-          "question": "event_organisation_8",
+          "question": "event_organisation_7",
           "comment": "",
           "money": -1000,
           "mood": 30
         }
       ]
     },
-	{
-      "id": "event_organisation_6",
+    {
+      "id": "event_organisation_5",
       "description": "La rénovation du bâtiment attendra. Jenny ne cache pas sa déception. RETOUR LIGNE. Et si on animait un peu plus la vie au boulot ?",
       "random": false,
       "availableTime": 0,
@@ -493,22 +485,22 @@
       "answers": [
         {
           "label": "Organiser des soirées mensuelles dans le bar à l'angle de la 5ème avenue",
-          "question": "event_organisation_7",
+          "question": "event_organisation_6",
           "comment": "",
           "money": -500,
           "mood": 30
         },
-		{
+        {
           "label": "Aménager un étage dédié à la détente",
-          "question": "event_organisation_8",
+          "question": "event_organisation_7",
           "comment": "",
           "money": -1000,
           "mood": 30
         }
       ]
     },
-	{
-      "id": "event_organisation_7",
+    {
+      "id": "event_organisation_6",
       "description": "La première soirée mensuelle fut exceptionnelle ! C'était une nouvelle occasion de découvrir Jenny sous un autre angle. Et de discuter avec vos autres collègues, bien entendu. RETOUR LIGNE. Il est maintenant temps de lancer un projet de grande envergure !",
       "random": false,
       "availableTime": 0,
@@ -521,14 +513,14 @@
           "money": -1500,
           "mood": 20
         },
-		{
+        {
           "label": "Financer un comité scientifique pour leur permettre d'identifier des profils tellement compatibles qu'ils se marieront sans s'être jamais vus auparavant",
           "question": "",
           "comment": "C'est incroyable ! Des membres du site ont fait confiance à vos experts et ont accepté de se marier avec quelqu'un qu'ils n'ont jamais vu. La science serait-elle capable de trouver l'amour pour vous ?",
           "money": -500,
           "mood": 10
         },
-		{
+        {
           "label": "Peu importe ce que ça vous coûtera, on n'a qu'une seule vie. Payer un tour du monde groupé à tous les salariés",
           "question": "",
           "comment": "Faire le tour du monde avec 400 autres personnes ? Vous ne pensiez pas vivre une telle chose un jour. La nouvelle a fait du bruit mais ce qui compte à vos yeux, c'est Jenny dont vous vous êtes beaucoup rapproché.",
@@ -537,8 +529,8 @@
         }
       ]
     },
-	{
-      "id": "event_organisation_8",
+    {
+      "id": "event_organisation_7",
       "description": "Babyfoot, coussins et hamacs, friandises à volonté et consoles de jeux. Tout est réuni pour donner une ambiance start-up. Il faudra simplement demander aux 3 employés du fond de la salle de baisser un peu le volume quand ils regardent La La Land. RETOUR LIGNE. Il est maintenant de lancer un projet de grande envergure !",
       "random": false,
       "availableTime": 0,
@@ -551,14 +543,14 @@
           "money": -1500,
           "mood": 20
         },
-		{
+        {
           "label": "Financer un comité scientifique pour leur permettre d'identifier des profils tellement compatibles qu'ils se marieront sans s'être jamais vus auparavant",
           "question": "",
           "comment": "C'est incroyable ! Des membres du site ont fait confiance à vos experts et ont accepté de se marier avec quelqu'un qu'ils n'ont jamais vu. La science serait-elle capable de trouver l'amour pour vous ?",
           "money": -500,
           "mood": 10
         },
-		{
+        {
           "label": "Peu importe ce que ça vous coûtera, on n'a qu'une seule vie. Payer un tour du monde groupé à tous les salariés",
           "question": "",
           "comment": "Faire le tour du monde avec 400 autres personnes ? Vous ne pensiez pas vivre une telle chose un jour. La nouvelle a fait du bruit mais ce qui compte à vos yeux, c'est Jenny dont vous vous êtes beaucoup rapproché.",
@@ -567,7 +559,7 @@
         }
       ]
     },
-	{
+    {
       "id": "event_soiree_rooftop",
       "description": "Votre équipe vous annonce qu'une soirée rooftop se tient ce soir au sommet de l'immeuble d'en face. Ils vous proposent de les rejoindre.",
       "random": true,
@@ -581,16 +573,16 @@
           "money": -500,
           "mood": 10
         },
-		{
+        {
           "label": "Rester au travail",
-          "question": "event_soiree_rooftop_3",
+          "question": "",
           "comment": "",
-          "money": 0,
+          "money": 1000,
           "mood": -30
         }
       ]
     },
-	{
+    {
       "id": "event_soiree_rooftop_2",
       "description": "Ca fait du bien de se lâcher un peu. Une avenue sépare la terrasse de votre bureau. C'est comme si vous narguiez votre entreprise.",
       "random": false,
@@ -599,21 +591,21 @@
       "answers": [
         {
           "label": "Plonger dans le jacuzzi",
-          "question": "event_soiree_rooftop_4",
+          "question": "event_soiree_rooftop_3",
           "comment": "",
           "money": 0,
           "mood": 20
         },
-		{
+        {
           "label": "Aller boire un verre",
-          "question": "event_soiree_rooftop_5",
+          "question": "event_soiree_rooftop_4",
           "comment": "",
           "money": 0,
           "mood": 10
         }
       ]
     },
-	{
+    {
       "id": "event_soiree_rooftop_3",
       "description": "L'eau chaude et la foule qui s'esclaffe de rire réchauffent votre coeur. Jenny est amusée, elle qui n'a pas l'habitude de vous voir ainsi. RETOUR LIGNE. Affalé sur le canapé, attendant de sécher, vous commencez une longue discussion avec Jenny. La jeune femme vous fait relativiser sur l'entreprise, qui semble prendre trop de place dans votre esprit. Êtes-vous vraiment heureux depuis que vous en avez pris le contrôle ? Ne pas être riche n'est pas un échec.",
       "random": false,
@@ -629,10 +621,10 @@
         }
       ]
     },
-	{
+    {
       "id": "event_soiree_rooftop_4",
       "description": "Vous trouvez Jenny au bar. C'est l'occasion de parler un peu de chacun de vous. La jeune femme vous fait relativiser sur l'entreprise, qui semble prendre trop de place dans votre esprit. Êtes-vous vraiment heureux depuis que vous en avez pris le contrôle ? Ne pas être riche n'est pas un échec.",
-      "random": true,
+      "random": false,
       "availableTime": 0,
       "preparationTime": 0,
       "answers": [
@@ -645,7 +637,7 @@
         }
       ]
     },
-	{
+    {
       "id": "design",
       "description": "Le département Art et Plastique vous recommande de changer le site de fond en comble : apparence, logo et slogan. La manoeuvre est onéreuse mais il pourrait être temps de s'aligner sur la concurrence.",
       "random": true,
@@ -659,7 +651,7 @@
           "money": -800,
           "mood": 30
         },
-		{
+        {
           "label": "Laisser le site comme tel",
           "question": "",
           "comment": "Si votre site n'est plus très joli, il fait son travail. C'est ce qui importe non ?",
@@ -668,7 +660,7 @@
         }
       ]
     },
-	{
+    {
       "id": "event_actionnaire",
       "description": "C'est la première assemblée des actionnaires depuis que vous êtes à la tête de l'entreprise. Vous ne connaissez rien à cet exercice mais votre équipe vous a donné quelques conseils. Face à vous, d'importants actionnaires doivent être convaincus par les chiffres de l'entreprise et vos projets futurs.",
       "random": true,
@@ -682,7 +674,7 @@
           "money": 0,
           "mood": 0
         },
-		{
+        {
           "label": "Vous permettre une blague pour détendre l'atmosphère",
           "question": "event_actionnaire_3",
           "comment": "",
@@ -691,7 +683,7 @@
         }
       ]
     },
-	{
+    {
       "id": "event_actionnaire_2",
       "description": "Les actionnaires semblent convaincus par les chiffres actuels mais vos projets sont encore trop flous à leurs yeux. Ils vous demandent beaucoup plus.",
       "random": false,
@@ -705,7 +697,7 @@
           "money": -3000,
           "mood": -40
         },
-		{
+        {
           "label": "Promettre de faire plus",
           "question": "",
           "comment": "Les actionnaires semblent satisfaits.",
@@ -714,7 +706,7 @@
         }
       ]
     },
-	{
+    {
       "id": "event_actionnaire_3",
       "description": "Les actionnaires n'apprécient pas du tout ce manque de sérieux. Certains n'hésitent pas à exprimer leur mécontentement.",
       "random": false,
@@ -728,7 +720,7 @@
           "money": -3000,
           "mood": -40
         },
-		{
+        {
           "label": "Vous reprendre malgré votre déception",
           "question": "",
           "comment": "Les actionnaires semblent satisfaits.",
@@ -736,22 +728,6 @@
           "mood": -50
         }
       ]
-    },
-	{
-      "id": "",
-      "description": "",
-      "random": true,
-      "availableTime": 0,
-      "preparationTime": 0,
-      "answers": [
-        {
-          "label": "",
-          "question": "",
-          "comment": "",
-          "money": 0,
-          "mood": 0
-        }
-      ]
-    },
+    }
   ]
 }
