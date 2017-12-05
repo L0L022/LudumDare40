@@ -182,6 +182,7 @@
       "random": true,
       "availableTime": 0,
       "preparationTime": 0,
+      "event": "space",
       "answers": [
         {
           "label": "Décollez pour les étoiles",
@@ -290,6 +291,7 @@
       "random": true,
       "availableTime": 0,
       "preparationTime": 0,
+      "event": "christmas",
       "answers": [
         {
           "label": "Organiser le Noël de l'entreprise",
@@ -391,6 +393,7 @@
       "random": true,
       "availableTime": 0,
       "preparationTime": 0,
+      "event": "meeting",
       "answers": [
         {
           "label": "Les salaires sont globalement trop élevés, il faut les réduire",
@@ -566,6 +569,7 @@
       "random": true,
       "availableTime": 0,
       "preparationTime": 0,
+      "event": "rooftop",
       "answers": [
         {
           "label": "Laisser le boulot de côté et accepter l'invitation",
@@ -667,6 +671,7 @@
       "random": false,
       "availableTime": 0,
       "preparationTime": 0,
+      "event": "shareholders_party",
       "answers": [
         {
           "label": "Discuter des chiffres et dévoiler de nouveaux projets",
