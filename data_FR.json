@@ -6,7 +6,7 @@
   "lose_money": 10000,
   "end_win": "L'entreprise a fait faillite. Rachetée par un concurrent, elle ne vous appartient désormais plus. RETOUR LIGNE. Mais votre vie est plus paisible. Vous avez décidé de revoir Jenny, avec qui vous vivez désormais en France. Vous qui pensiez trouver le bonheur à la tête d'une grande entreprise, vous qui aidiez les autres à trouver l'amour, vous avez décidé de reprendre votre vie en main. Vous revoici désormais proche de votre famille, prêt à en fonder une.",
   "end_lose": "Félicitations, votre entreprise se porte à merveille et les actionnaires sont ravis. Les jours passent et se ressemblent, vous répondez à des appels et des mails, plannifiez des rendez-vous et remplissez des tas de feuilles. Vous commencez à vous demander si cette vie un peu morose est celle que vous vouliez vraiment... RETOUR LIGNE. N'hésitez pas à retenter l'aventure, en gardant cette fois-ci en tête que l'argent ne fait pas forcément le bonheur.",
-  "final_question": "",
+  "final_question": "event_actionnaire",
   "questions": [
     {
       "id": "recruitment",
@@ -182,6 +182,7 @@
       "random": true,
       "availableTime": 0,
       "preparationTime": 0,
+      "event": "space",
       "answers": [
         {
           "label": "Décollez pour les étoiles",
@@ -290,6 +291,7 @@
       "random": true,
       "availableTime": 0,
       "preparationTime": 0,
+      "event": "christmas",
       "answers": [
         {
           "label": "Organiser le Noël de l'entreprise",
@@ -391,6 +393,7 @@
       "random": true,
       "availableTime": 0,
       "preparationTime": 0,
+      "event": "meeting",
       "answers": [
         {
           "label": "Les salaires sont globalement trop élevés, il faut les réduire",
@@ -566,6 +569,7 @@
       "random": true,
       "availableTime": 0,
       "preparationTime": 0,
+      "event": "rooftop",
       "answers": [
         {
           "label": "Laisser le boulot de côté et accepter l'invitation",
@@ -664,9 +668,10 @@
     {
       "id": "event_actionnaire",
       "description": "C'est la première assemblée des actionnaires depuis que vous êtes à la tête de l'entreprise. Vous ne connaissez rien à cet exercice mais votre équipe vous a donné quelques conseils. Face à vous, d'importants actionnaires doivent être convaincus par les chiffres de l'entreprise et vos projets futurs.",
-      "random": true,
+      "random": false,
       "availableTime": 0,
       "preparationTime": 0,
+      "event": "shareholders_party",
       "answers": [
         {
           "label": "Discuter des chiffres et dévoiler de nouveaux projets",

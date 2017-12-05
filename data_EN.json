@@ -6,7 +6,7 @@
   "lose_money": 10000,
   "end_win": "You company went bankrupt. It has been bought by a competitor and doesn't belong to you anymore. RETOUR LIGNE. But your life is more peaceful. You decided to see Jenny again... And you two went back to France to live together. You thought your happiness was lying in your job and your company, where you were finding love for others... You discovered it was wrong when you decided to get your life back on track. You are now close to your family and ready to build one.",
   "end_lose": "Congratulations, your company is doing great and the shareholders could not be happier. Days pass by and look the same: you answer phonecalls and emails, you plan appointments, you fill in forms... You start to wonder if that boring life really is the one you want for yourself... RETOUR LIGNE. What about trying again, and this time you keep in mind that money may not buy happiness?",
-  "final_question": "",
+  "final_question": "event_actionnaire",
   "questions": [
     {
       "id": "recruitment",
@@ -664,7 +664,7 @@
     {
       "id": "event_actionnaire",
       "description": "There we are, this is the first shareholders assembly since you got your position in the company. You don't know anything about that but your team gave you great tips. You will be talking to major shareholders and they need to be convinced by the company's figures and your future projects.",
-      "random": true,
+      "random": false,
       "availableTime": 0,
       "preparationTime": 0,
       "answers": [
