@@ -664,7 +664,7 @@
     {
       "id": "event_actionnaire",
       "description": "There we are, this is the first shareholders assembly since you got your position in the company. You don't know anything about that but your team gave you great tips. You will be talking to major shareholders and they need to be convinced by the company's figures and your future projects.",
-      "random": true,
+      "random": false,
       "availableTime": 0,
       "preparationTime": 0,
       "answers": [
