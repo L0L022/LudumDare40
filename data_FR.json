@@ -1,11 +1,11 @@
 {
   "money": 5000,
   "mood": 70,
-  "intro": "Vous êtes Mickaël et venez d'hériter d'une entreprise new-yorkaise qui appartenait à un oncle dont vous connaissiez à peine l'existence. Vous voici donc à la tête de Lovely, un site de rencontre en ligne. En débarquant dans le bureau surplombant les grattes-ciels, vous comprenez que votre vie va désormais changer. Il va vous falloir prendre des décisions et répondre aux requêtes de tout un tas de personnes. RETOUR LIGNE. Heureusement, votre nouvelle équipe est prête à vous aider. Vous n'êtes d'ailleurs pas infaillible face au charme de Jenny, votre secrétaire. RETOUR LIGNE. Si l'avenir de votre entreprise est important, n'oubliez malgré tout pas que l'argent ne fait pas forcément le bonheur",
+  "intro": "Vous êtes Mickaël et venez d'hériter d'une entreprise new-yorkaise qui appartenait à un oncle dont vous connaissiez à peine l'existence. Vous voici donc à la tête de Lovely, un site de rencontre en ligne. En débarquant dans le bureau surplombant les grattes-ciels, vous comprenez que votre vie va désormais changer. Il va vous falloir prendre des décisions et répondre aux requêtes de tout un tas de personnes.\n\n Heureusement, votre nouvelle équipe est prête à vous aider. Vous n'êtes d'ailleurs pas infaillible face au charme de Jenny, votre secrétaire.\n\n Si l'avenir de votre entreprise est important, n'oubliez malgré tout pas que l'argent ne fait pas forcément le bonheur",
   "win_money": 0,
   "lose_money": 10000,
-  "end_win": "L'entreprise a fait faillite. Rachetée par un concurrent, elle ne vous appartient désormais plus. RETOUR LIGNE. Mais votre vie est plus paisible. Vous avez décidé de revoir Jenny, avec qui vous vivez désormais en France. Vous qui pensiez trouver le bonheur à la tête d'une grande entreprise, vous qui aidiez les autres à trouver l'amour, vous avez décidé de reprendre votre vie en main. Vous revoici désormais proche de votre famille, prêt à en fonder une.",
-  "end_lose": "Félicitations, votre entreprise se porte à merveille et les actionnaires sont ravis. Les jours passent et se ressemblent, vous répondez à des appels et des mails, plannifiez des rendez-vous et remplissez des tas de feuilles. Vous commencez à vous demander si cette vie un peu morose est celle que vous vouliez vraiment... RETOUR LIGNE. N'hésitez pas à retenter l'aventure, en gardant cette fois-ci en tête que l'argent ne fait pas forcément le bonheur.",
+  "end_win": "Vous êtes tombé à 0$.\n\nL'entreprise a fait faillite. Rachetée par un concurrent, elle ne vous appartient désormais plus.\n\n Mais votre vie est plus paisible. Vous avez décidé de revoir Jenny, avec qui vous vivez désormais en France. Vous qui pensiez trouver le bonheur à la tête d'une grande entreprise, vous qui aidiez les autres à trouver l'amour, vous avez décidé de reprendre votre vie en main. Vous revoici désormais proche de votre famille, prêt à en fonder une.",
+  "end_lose": "Vous avez atteint 10 000$.\n\nFélicitations, votre entreprise se porte à merveille et les actionnaires sont ravis. Les jours passent et se ressemblent, vous répondez à des appels et des mails, plannifiez des rendez-vous et remplissez des tas de feuilles. Vous commencez à vous demander si cette vie un peu morose est celle que vous vouliez vraiment...\n\n N'hésitez pas à retenter l'aventure, en gardant cette fois-ci en tête que l'argent ne fait pas forcément le bonheur.",
   "final_question": "event_actionnaire",
   "questions": [
     {
@@ -73,29 +73,6 @@
           "question": "",
           "comment": "",
           "money": 2500,
-          "mood": 0
-        }
-      ]
-    },
-    {
-      "id": "restaurant",
-      "description": "À rester cloitré dans votre bureau tous les jours vous manquez à vos parents et ils vous ont invité a dîner ce soir.",
-      "random": true,
-      "availableTime": 0,
-      "preparationTime": 0,
-      "answers": [
-        {
-          "label": "Quitter le bureau plus tôt et dîner avec vos parents",
-          "question": "",
-          "comment": "Une réunion de famille donne toujours le sourire.",
-          "money": 0,
-          "mood": 20
-        },
-        {
-          "label": "Préférer vous avancer sur votre travail",
-          "question": "",
-          "comment": "",
-          "money": 1000,
           "mood": 0
         }
       ]
@@ -202,7 +179,7 @@
     },
     {
       "id": "event_conference_espace",
-      "description": "Tous est enfin prêt. Dans quelques minutes se tiendra la première conférence de presse en direct de l'espace. Toujours à vos côtés, Jenny s'assure que tout se passe bien. C'est elle qui vous donne le top départ de votre discours. RETOUR LIGNE. Nous sommes fiers de vous parler depuis les étoiles ce soir. Nos projets pour l'avenir sont fabuleux.",
+      "description": "Tous est enfin prêt. Dans quelques minutes se tiendra la première conférence de presse en direct de l'espace. Toujours à vos côtés, Jenny s'assure que tout se passe bien. C'est elle qui vous donne le top départ de votre discours.\n\n Nous sommes fiers de vous parler depuis les étoiles ce soir. Nos projets pour l'avenir sont fabuleux.",
       "random": false,
       "availableTime": 0,
       "preparationTime": 0,
@@ -225,7 +202,7 @@
     },
     {
       "id": "event_conference_espace_2",
-      "description": "Que Lovely se porte bien ne semble pas intéresser personne. C'est à peine si l'annonce de votre application mobile révolutionnaire émeut le public. RETOUR LIGNE. Les minutes passent, Mickaël vit un rêve éveillé à bord de son bureau astro-propulsé. Le sourire confiant de Jenny rassure le jeune homme. Mais un problème technique vint perturber la communication avec la Terre.",
+      "description": "Que Lovely se porte bien ne semble pas intéresser personne. C'est à peine si l'annonce de votre application mobile révolutionnaire émeut le public.\n\n Les minutes passent, Mickaël vit un rêve éveillé à bord de son bureau astro-propulsé. Le sourire confiant de Jenny rassure le jeune homme. Mais un problème technique vint perturber la communication avec la Terre.",
       "random": false,
       "availableTime": 0,
       "preparationTime": 0,
@@ -459,7 +436,7 @@
     },
     {
       "id": "event_organisation_4",
-      "description": "Tout le bâtiment a été rénové et réaménagé. La cafetière du 24ème étage fonctionne enfin ! C'est dingue ce que ça fait du bien de travailler dans un nouveau cadre. Vous ne savez pas si vous vous faites des idées ou non, mais il semblerait que les salariés soient plus souriant depuis. Et c'est particulièrement le cas de Jenny qui apprécie votre implication dans le bien-être de vos salariés. RETOUR LIGNE. Et si on animait un peu plus la vie au boulot ?",
+      "description": "Tout le bâtiment a été rénové et réaménagé. La cafetière du 24ème étage fonctionne enfin ! C'est dingue ce que ça fait du bien de travailler dans un nouveau cadre. Vous ne savez pas si vous vous faites des idées ou non, mais il semblerait que les salariés soient plus souriant depuis. Et c'est particulièrement le cas de Jenny qui apprécie votre implication dans le bien-être de vos salariés.\n\n Et si on animait un peu plus la vie au boulot ?",
       "random": false,
       "availableTime": 0,
       "preparationTime": 0,
@@ -482,7 +459,7 @@
     },
     {
       "id": "event_organisation_5",
-      "description": "La rénovation du bâtiment attendra. Jenny ne cache pas sa déception. RETOUR LIGNE. Et si on animait un peu plus la vie au boulot ?",
+      "description": "La rénovation du bâtiment attendra. Jenny ne cache pas sa déception.\n\n Et si on animait un peu plus la vie au boulot ?",
       "random": false,
       "availableTime": 0,
       "preparationTime": 0,
@@ -505,7 +482,7 @@
     },
     {
       "id": "event_organisation_6",
-      "description": "La première soirée mensuelle fut exceptionnelle ! C'était une nouvelle occasion de découvrir Jenny sous un autre angle. Et de discuter avec vos autres collègues, bien entendu. RETOUR LIGNE. Il est maintenant temps de lancer un projet de grande envergure !",
+      "description": "La première soirée mensuelle fut exceptionnelle ! C'était une nouvelle occasion de découvrir Jenny sous un autre angle. Et de discuter avec vos autres collègues, bien entendu.\n\n Il est maintenant temps de lancer un projet de grande envergure !",
       "random": false,
       "availableTime": 0,
       "preparationTime": 0,
@@ -535,7 +512,7 @@
     },
     {
       "id": "event_organisation_7",
-      "description": "Babyfoot, coussins et hamacs, friandises à volonté et consoles de jeux. Tout est réuni pour donner une ambiance start-up. Il faudra simplement demander aux 3 employés du fond de la salle de baisser un peu le volume quand ils regardent La La Land. RETOUR LIGNE. Il est maintenant de lancer un projet de grande envergure !",
+      "description": "Babyfoot, coussins et hamacs, friandises à volonté et consoles de jeux. Tout est réuni pour donner une ambiance start-up. Il faudra simplement demander aux 3 employés du fond de la salle de baisser un peu le volume quand ils regardent La La Land.\n\n Il est maintenant de lancer un projet de grande envergure !",
       "random": false,
       "availableTime": 0,
       "preparationTime": 0,
@@ -612,7 +589,7 @@
     },
     {
       "id": "event_soiree_rooftop_3",
-      "description": "L'eau chaude et la foule qui s'esclaffe de rire réchauffent votre coeur. Jenny est amusée, elle qui n'a pas l'habitude de vous voir ainsi. RETOUR LIGNE. Affalé sur le canapé, attendant de sécher, vous commencez une longue discussion avec Jenny. La jeune femme vous fait relativiser sur l'entreprise, qui semble prendre trop de place dans votre esprit. Êtes-vous vraiment heureux depuis que vous en avez pris le contrôle ? Ne pas être riche n'est pas un échec.",
+      "description": "L'eau chaude et la foule qui s'esclaffe de rire réchauffent votre coeur. Jenny est amusée, elle qui n'a pas l'habitude de vous voir ainsi.\n\n Affalé sur le canapé, attendant de sécher, vous commencez une longue discussion avec Jenny. La jeune femme vous fait relativiser sur l'entreprise, qui semble prendre trop de place dans votre esprit. Êtes-vous vraiment heureux depuis que vous en avez pris le contrôle ? Ne pas être riche n'est pas un échec.",
       "random": false,
       "availableTime": 0,
       "preparationTime": 0,
@@ -734,6 +711,98 @@
           "mood": -50
         }
       ]
-    }
+    },
+	{
+      "id": "lootboxes",
+      "description": "Le département Services malins a développé un tout nouveau concept : vendre des lots surprises pour 5$ sur le site. Ces lots surprises peuvent inclure des émoticônes pour chatter, des thèmes uniques pour les profils et d'autres surprises.",
+      "random": true,
+      "availableTime": 0,
+      "preparationTime": 0,
+      "answers": [
+        {
+          "label": "Accepter",
+          "question": "",
+          "comment": "Ta-da ! La catégorie Lots surprise a été ajoutée au site. Les membres se plaignent du concept... mais achètent.",
+          "money": 2000,
+          "mood": -40
+        },
+        {
+          "label": "Décliner, vous n'avez pas pour habitude de laisser de chance au hasard",
+          "question": "",
+          "comment": "Il n'y aura pas de lots surprise.",
+          "money": 0,
+          "mood": 0
+        }
+      ]
+    },
+	{
+      "id": "data",
+      "description": "Vous avez appris que Jenny a commencé sa carrière chez un concurrent. Peut-être qu'il est possible d'échanger des données confidentielles concernant l'entreprise contre des informations sur Jenny. Ceci pourrait vous permettre de vous rapprocher d'elle.",
+      "random": true,
+      "availableTime": 0,
+      "preparationTime": 0,
+      "answers": [
+        {
+          "label": "Révéler des informations stratégiques au sujet de de Lovely",
+          "question": "",
+          "comment": "Vous n'avez pas appris grand-chose au sujet de Jenny si ce n'est que c'est une femme engagée. Et qu'elle adore faire des soirées.",
+          "money": -2000,
+          "mood": 20
+        },
+        {
+          "label": "Oublier cette idée. Vous apprendez à la connaître.",
+          "question": "",
+          "comment": "Vous ne savez rien de plus au sujet de Jenny, mais vos concurrents n'ont pas eu accès à des données confidentielles sur l'entreprise.",
+          "money": 0,
+          "mood": 0
+        }
+      ]
+    },
+	{
+      "id": "charity",
+      "description": "Vous vous êtes toujours senti concerné par les problèmes du monde. Peut-être que Lovely pourrait faire du mécénat ?",
+      "random": true,
+      "availableTime": 0,
+      "preparationTime": 0,
+      "answers": [
+        {
+          "label": "Faire un don à l'association Queenpeace",
+          "question": "",
+          "comment": "",
+          "money": -2000,
+          "mood": 70
+        },
+        {
+          "label": "Garder votre argent",
+          "question": "",
+          "comment": "Lovely n'aidera aucune association caritative.",
+          "money": 0,
+          "mood": -20
+        }
+      ]
+    },
+	{
+      "id": "cookie",
+      "description": "La chef de la cantine souhaiterait cuisiner des cookies pour tous les employés. Ils adoreraient. Mais ils sont 400 !",
+      "random": true,
+      "availableTime": 0,
+      "preparationTime": 0,
+      "answers": [
+        {
+          "label": "Après-midi cookies !",
+          "question": "",
+          "comment": "Tout le monde dégustent les cookies. Le lendemain, les employés affichent une bannière \"Cookie Queen\" dans la cantine.",
+          "money": -500,
+          "mood": 20
+        },
+        {
+          "label": "Ignorer l'idée",
+          "question": "",
+          "comment": "Vous avez finalement faim mais des photos de cookies sur Loogle suffisent à vous motiver.",
+          "money": 0,
+          "mood": 0
+        }
+      ]
+    },
   ]
 }
