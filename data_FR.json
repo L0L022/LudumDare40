@@ -159,7 +159,6 @@
       "random": true,
       "availableTime": 0,
       "preparationTime": 0,
-      "event": "space",
       "answers": [
         {
           "label": "Décollez pour les étoiles",
@@ -183,6 +182,7 @@
       "random": false,
       "availableTime": 0,
       "preparationTime": 0,
+	  "event": "space",
       "answers": [
         {
           "label": "Annoncer un nouveau projet",
@@ -268,7 +268,6 @@
       "random": true,
       "availableTime": 0,
       "preparationTime": 0,
-      "event": "christmas",
       "answers": [
         {
           "label": "Organiser le Noël de l'entreprise",
@@ -292,6 +291,7 @@
       "random": false,
       "availableTime": 0,
       "preparationTime": 0,
+	  "event": "christmas",
       "answers": [
         {
           "label": "Monter sur la scène centrale et danser",
@@ -546,7 +546,6 @@
       "random": true,
       "availableTime": 0,
       "preparationTime": 0,
-      "event": "rooftop",
       "answers": [
         {
           "label": "Laisser le boulot de côté et accepter l'invitation",
@@ -570,6 +569,7 @@
       "random": false,
       "availableTime": 0,
       "preparationTime": 0,
+	  "event": "rooftop",
       "answers": [
         {
           "label": "Plonger dans le jacuzzi",
