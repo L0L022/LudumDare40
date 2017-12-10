@@ -488,21 +488,21 @@
       "preparationTime": 0,
       "answers": [
         {
-          "label": "Financer un lanceur de signaux interstellaires capable d'envoyer des messages d'amours dans les étoiles",
+          "label": "Financer un émetteur interstellaire capable d'envoyer des messages d'amours dans les étoiles",
           "question": "",
           "comment": "Le travail fut long et onéreux mais Lovely lance Love Among the Stars, le premier service d'envoi de messages d'amours dans l'espace. Qui sait, peut-être qu'un jour une espèce extra-terrestre répondra.",
           "money": -1500,
           "mood": 20
         },
         {
-          "label": "Financer un comité scientifique pour leur permettre d'identifier des profils tellement compatibles qu'ils se marieront sans s'être jamais vus auparavant",
+          "label": "Financer un comité scientifique capable d'identifier des profils compatibles",
           "question": "",
           "comment": "C'est incroyable ! Des membres du site ont fait confiance à vos experts et ont accepté de se marier avec quelqu'un qu'ils n'ont jamais vu. La science serait-elle capable de trouver l'amour pour vous ?",
           "money": -1000,
           "mood": 10
         },
         {
-          "label": "Peu importe ce que ça vous coûtera, on n'a qu'une seule vie. Payer un tour du monde groupé à tous les salariés",
+          "label": "Peu importe ce que ça vous coûtera : payer un tour du monde groupé à tous les salariés",
           "question": "",
           "comment": "Faire le tour du monde avec 400 autres personnes ? Vous ne pensiez pas vivre une telle chose un jour. La nouvelle a fait du bruit mais ce qui compte à vos yeux, c'est Jenny dont vous vous êtes beaucoup rapproché.",
           "money": -4000,
@@ -518,21 +518,21 @@
       "preparationTime": 0,
       "answers": [
         {
-          "label": "Financer un lanceur de signaux interstellaires capable d'envoyer des messages d'amours dans les étoiles",
+          "label": "Financer un émetteur interstellaire capable d'envoyer des messages d'amours dans les étoiles",
           "question": "",
           "comment": "Le travail fut long et onéreux mais Lovely lance Love Among the Stars, le premier service d'envoi de messages d'amours dans l'espace. Qui sait, peut-être qu'un jour une espèce extra-terrestre répondra.",
           "money": -1500,
           "mood": 20
         },
         {
-          "label": "Financer un comité scientifique pour leur permettre d'identifier des profils tellement compatibles qu'ils se marieront sans s'être jamais vus auparavant",
+          "label": "Financer un comité scientifique pour leur permettre d'identifier des profils compatibles",
           "question": "",
           "comment": "C'est incroyable ! Des membres du site ont fait confiance à vos experts et ont accepté de se marier avec quelqu'un qu'ils n'ont jamais vu. La science serait-elle capable de trouver l'amour pour vous ?",
           "money": -500,
           "mood": 10
         },
         {
-          "label": "Peu importe ce que ça vous coûtera, on n'a qu'une seule vie. Payer un tour du monde groupé à tous les salariés",
+          "label": "Peu importe ce que ça vous coûtera : payer un tour du monde groupé à tous les salariés",
           "question": "",
           "comment": "Faire le tour du monde avec 400 autres personnes ? Vous ne pensiez pas vivre une telle chose un jour. La nouvelle a fait du bruit mais ce qui compte à vos yeux, c'est Jenny dont vous vous êtes beaucoup rapproché.",
           "money": -4000,
