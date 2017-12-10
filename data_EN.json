@@ -112,7 +112,7 @@
       "description": "The detective squad hired for the Megalow case is now ready to start the investigation. How should they investigate?",
       "random": false,
       "availableTime": 0,
-      "preparationTime": 120,
+      "preparationTime": 0,
       "answers": [
         {
           "label": "Spy on the Megalow employees at their places",
@@ -135,7 +135,7 @@
       "description": "The detective squad could not find any proof of the rumours about Megalow. Do you now accept the partnership in order to get the magazine database?",
       "random": false,
       "availableTime": 0,
-      "preparationTime": 120,
+      "preparationTime": 0,
       "answers": [
         {
           "label": "Accept the partnership",
