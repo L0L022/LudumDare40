@@ -13,7 +13,7 @@ margin/top = 0.0
 margin/right = 100.0
 margin/bottom = 20.0
 script/script = ExtResource( 1 )
-text = "If a class inherits from Reference, then instances will be freed when no longer in use. No garbage collector exists, just simple reference counting.If a class inherits from Reference, then instances will be freed when no longer in use. No garbage collector exists, just simple reference counting."
+text = "Les actionnaires n'apprécient pas du tout ce manque de sérieux. Certains n'hésitent pas à exprimer leur mécontentement."
 
 [node name="Button" type="Button" parent="."]
 
@@ -44,7 +44,6 @@ margin/left = 0.0
 margin/top = 0.0
 margin/right = 0.0
 margin/bottom = 0.0
-text = "By default, the body of a script file is an unnamed class and it can only be referenced externally as a resource or file."
 align = 1
 valign = 1
 autowrap = true

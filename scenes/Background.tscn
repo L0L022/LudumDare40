@@ -1,4 +1,4 @@
-[gd_scene load_steps=28 format=1]
+[gd_scene load_steps=51 format=1]
 
 [ext_resource path="res://assets/landscape/day/sky.png" type="Texture" id=1]
 [ext_resource path="res://assets/landscape/sunsets/lalasky.png" type="Texture" id=2]
@@ -20,7 +20,22 @@
 [ext_resource path="res://assets/computer/letter.png" type="Texture" id=18]
 [ext_resource path="res://assets/base.png" type="Texture" id=19]
 [ext_resource path="res://assets/landscape/night/shadow.png" type="Texture" id=20]
-[ext_resource path="res://assets/texture.png" type="Texture" id=21]
+[ext_resource path="res://assets/events/chrismas/background.png" type="Texture" id=21]
+[ext_resource path="res://assets/events/chrismas/flake.png" type="Texture" id=22]
+[ext_resource path="res://assets/events/chrismas/base.png" type="Texture" id=23]
+[ext_resource path="res://assets/events/chrismas/light.png" type="Texture" id=24]
+[ext_resource path="res://assets/events/rooftop/sky.png" type="Texture" id=25]
+[ext_resource path="res://assets/events/rooftop/building.png" type="Texture" id=26]
+[ext_resource path="res://assets/events/rooftop/base.png" type="Texture" id=27]
+[ext_resource path="res://assets/events/rooftop/light.png" type="Texture" id=28]
+[ext_resource path="res://assets/events/space/sky.png" type="Texture" id=29]
+[ext_resource path="res://assets/events/space/earth.png" type="Texture" id=30]
+[ext_resource path="res://assets/events/space/base.png" type="Texture" id=31]
+[ext_resource path="res://assets/events/meeting/meeting.png" type="Texture" id=32]
+[ext_resource path="res://assets/events/shareholdersmeeting/shareholdersmeeting.png" type="Texture" id=33]
+[ext_resource path="res://assets/events/ends/win.png" type="Texture" id=34]
+[ext_resource path="res://assets/events/ends/loose.png" type="Texture" id=35]
+[ext_resource path="res://assets/texture.png" type="Texture" id=36]
 
 [sub_resource type="Animation" id=1]
 
@@ -95,7 +110,7 @@ tracks/3/keys = {
 "values": [ false ]
 }
 tracks/4/type = "value"
-tracks/4/path = NodePath("landscape/night/mood:visibility/visible")
+tracks/4/path = NodePath("landscape/night/moon:visibility/visible")
 tracks/4/interp = 1
 tracks/4/imported = false
 tracks/4/keys = {
@@ -133,6 +148,16 @@ tracks/7/keys = {
 "transitions": FloatArray( 1 ),
 "update": 1,
 "values": [ false ]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("shadow:visibility/opacity")
+tracks/8/interp = 1
+tracks/8/imported = false
+tracks/8/keys = {
+"times": FloatArray( 0 ),
+"transitions": FloatArray( 1 ),
+"update": 0,
+"values": [ 0.0 ]
 }
 
 [sub_resource type="Animation" id=3]
@@ -182,7 +207,7 @@ tracks/3/keys = {
 "values": [ 1.0, 0.0 ]
 }
 tracks/4/type = "value"
-tracks/4/path = NodePath("landscape/night/mood:transform/pos")
+tracks/4/path = NodePath("landscape/night/moon:transform/pos")
 tracks/4/interp = 2
 tracks/4/imported = false
 tracks/4/keys = {
@@ -221,6 +246,56 @@ tracks/7/keys = {
 "update": 0,
 "values": [ 0.0, 1.0, 0.0 ]
 }
+tracks/8/type = "value"
+tracks/8/path = NodePath("shadow:visibility/opacity")
+tracks/8/interp = 1
+tracks/8/imported = false
+tracks/8/keys = {
+"times": FloatArray( 0.8, 1.5, 1.9 ),
+"transitions": FloatArray( 1, 1, 1 ),
+"update": 0,
+"values": [ 0.0, 1.0, 1.0 ]
+}
+tracks/9/type = "value"
+tracks/9/path = NodePath("landscape/day/building:visibility/visible")
+tracks/9/interp = 1
+tracks/9/imported = false
+tracks/9/keys = {
+"times": FloatArray( 0 ),
+"transitions": FloatArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+tracks/10/type = "value"
+tracks/10/path = NodePath("landscape/night/sky:visibility/visible")
+tracks/10/interp = 1
+tracks/10/imported = false
+tracks/10/keys = {
+"times": FloatArray( 0 ),
+"transitions": FloatArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+tracks/11/type = "value"
+tracks/11/path = NodePath("landscape/night/moon:visibility/visible")
+tracks/11/interp = 1
+tracks/11/imported = false
+tracks/11/keys = {
+"times": FloatArray( 0 ),
+"transitions": FloatArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+tracks/12/type = "value"
+tracks/12/path = NodePath("landscape/night/building:visibility/visible")
+tracks/12/interp = 1
+tracks/12/imported = false
+tracks/12/keys = {
+"times": FloatArray( 0 ),
+"transitions": FloatArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
 
 [sub_resource type="Animation" id=4]
 
@@ -257,6 +332,16 @@ tracks/2/keys = {
 "update": 1,
 "values": [ true ]
 }
+tracks/3/type = "value"
+tracks/3/path = NodePath("landscape/day/building:visibility/visible")
+tracks/3/interp = 1
+tracks/3/imported = false
+tracks/3/keys = {
+"times": FloatArray( 0 ),
+"transitions": FloatArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
 
 [sub_resource type="Animation" id=5]
 
@@ -285,7 +370,7 @@ tracks/1/keys = {
 "values": [ true ]
 }
 tracks/2/type = "value"
-tracks/2/path = NodePath("landscape/night/mood:visibility/visible")
+tracks/2/path = NodePath("landscape/night/moon:visibility/visible")
 tracks/2/interp = 1
 tracks/2/imported = false
 tracks/2/keys = {
@@ -293,6 +378,16 @@ tracks/2/keys = {
 "transitions": FloatArray( 1 ),
 "update": 1,
 "values": [ true ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("shadow:visibility/opacity")
+tracks/3/interp = 1
+tracks/3/imported = false
+tracks/3/keys = {
+"times": FloatArray( 0 ),
+"transitions": FloatArray( 1 ),
+"update": 0,
+"values": [ 1.0 ]
 }
 
 [sub_resource type="Animation" id=6]
@@ -315,6 +410,219 @@ tracks/1/path = NodePath("computer/lala_background:visibility/visible")
 tracks/1/interp = 1
 tracks/1/imported = false
 tracks/1/keys = {
+"times": FloatArray( 0 ),
+"transitions": FloatArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+
+[sub_resource type="Animation" id=7]
+
+resource/name = "christmas"
+length = 2.0
+loop = true
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("events/chrismas:visibility/visible")
+tracks/0/interp = 1
+tracks/0/imported = false
+tracks/0/keys = {
+"times": FloatArray( 0 ),
+"transitions": FloatArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("events/chrismas/light:visibility/opacity")
+tracks/1/interp = 1
+tracks/1/imported = false
+tracks/1/keys = {
+"times": FloatArray( 0, 1 ),
+"transitions": FloatArray( 1, 1 ),
+"update": 1,
+"values": [ 1.0, 0.0 ]
+}
+
+[sub_resource type="Animation" id=8]
+
+resource/name = "hide"
+length = 0.1
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("events/chrismas:visibility/visible")
+tracks/0/interp = 1
+tracks/0/imported = false
+tracks/0/keys = {
+"times": FloatArray( 0 ),
+"transitions": FloatArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("events/rooftop:visibility/visible")
+tracks/1/interp = 1
+tracks/1/imported = false
+tracks/1/keys = {
+"times": FloatArray( 0 ),
+"transitions": FloatArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("events/space:visibility/visible")
+tracks/2/interp = 1
+tracks/2/imported = false
+tracks/2/keys = {
+"times": FloatArray( 0 ),
+"transitions": FloatArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("events/meeting:visibility/visible")
+tracks/3/interp = 1
+tracks/3/imported = false
+tracks/3/keys = {
+"times": FloatArray( 0 ),
+"transitions": FloatArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("events/shareholdersmeeting:visibility/visible")
+tracks/4/interp = 1
+tracks/4/imported = false
+tracks/4/keys = {
+"times": FloatArray( 0 ),
+"transitions": FloatArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+
+[sub_resource type="Animation" id=9]
+
+resource/name = "loose"
+length = 0.1
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("events/ends/loose:visibility/visible")
+tracks/0/interp = 1
+tracks/0/imported = false
+tracks/0/keys = {
+"times": FloatArray( 0 ),
+"transitions": FloatArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+
+[sub_resource type="Animation" id=10]
+
+length = 0.1
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("events/meeting:visibility/visible")
+tracks/0/interp = 1
+tracks/0/imported = false
+tracks/0/keys = {
+"times": FloatArray( 0 ),
+"transitions": FloatArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+
+[sub_resource type="Animation" id=11]
+
+length = 2.0
+loop = true
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("events/rooftop:visibility/visible")
+tracks/0/interp = 1
+tracks/0/imported = false
+tracks/0/keys = {
+"times": FloatArray( 0 ),
+"transitions": FloatArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("events/rooftop/light:visibility/opacity")
+tracks/1/interp = 1
+tracks/1/imported = false
+tracks/1/keys = {
+"times": FloatArray( 0, 1 ),
+"transitions": FloatArray( 1, 1 ),
+"update": 0,
+"values": [ 1.0, 0.0 ]
+}
+
+[sub_resource type="Animation" id=12]
+
+resource/name = "shareholders_party"
+length = 0.1
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("events/shareholdersmeeting:visibility/visible")
+tracks/0/interp = 1
+tracks/0/imported = false
+tracks/0/keys = {
+"times": FloatArray( 0 ),
+"transitions": FloatArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+
+[sub_resource type="Animation" id=13]
+
+length = 20.0
+loop = true
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("events/space/earth:transform/rot")
+tracks/0/interp = 2
+tracks/0/imported = false
+tracks/0/keys = {
+"times": FloatArray( 0, 20 ),
+"transitions": FloatArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, -360.0 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("events/space:visibility/visible")
+tracks/1/interp = 1
+tracks/1/imported = false
+tracks/1/keys = {
+"times": FloatArray( 0 ),
+"transitions": FloatArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("events/space/earth:transform/pos")
+tracks/2/interp = 2
+tracks/2/imported = false
+tracks/2/keys = {
+"times": FloatArray( 0, 5.1, 10.1, 15 ),
+"transitions": FloatArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 198.788, 201.611 ), Vector2( 209.882, 215.136 ), Vector2( 195.069, 220.674 ), Vector2( 181.735, 216.178 ) ]
+}
+
+[sub_resource type="Animation" id=14]
+
+resource/name = "win"
+length = 0.1
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("events/ends/win:visibility/visible")
+tracks/0/interp = 1
+tracks/0/imported = false
+tracks/0/keys = {
 "times": FloatArray( 0 ),
 "transitions": FloatArray( 1 ),
 "update": 1,
@@ -366,6 +674,7 @@ margin/bottom = 0.0
 
 [node name="day" type="Control" parent="landscape"]
 
+editor/display_folded = true
 anchor/right = 1
 anchor/bottom = 1
 focus/ignore_mouse = false
@@ -395,7 +704,6 @@ stretch_mode = 7
 
 [node name="lalasky" type="TextureFrame" parent="landscape/day"]
 
-visibility/opacity = 0.703704
 anchor/right = 1
 anchor/bottom = 1
 focus/ignore_mouse = true
@@ -412,7 +720,7 @@ stretch_mode = 7
 
 [node name="sun" type="Sprite" parent="landscape/day"]
 
-transform/pos = Vector2( -60.6027, 255.328 )
+transform/pos = Vector2( -90.4163, 303.593 )
 transform/scale = Vector2( 0.5, 0.5 )
 texture = ExtResource( 3 )
 
@@ -434,6 +742,7 @@ stretch_mode = 7
 
 [node name="night" type="Control" parent="landscape"]
 
+editor/display_folded = true
 anchor/right = 1
 anchor/bottom = 1
 focus/ignore_mouse = false
@@ -447,8 +756,7 @@ margin/bottom = 0.0
 
 [node name="sky" type="TextureFrame" parent="landscape/night"]
 
-visibility/visible = false
-visibility/opacity = -0.102041
+visibility/opacity = -0.0841837
 anchor/right = 1
 anchor/bottom = 1
 focus/ignore_mouse = true
@@ -494,7 +802,7 @@ randomness/final_size = 1.0
 
 [node name="sunset" type="TextureFrame" parent="landscape/night"]
 
-visibility/opacity = -0.103299
+visibility/opacity = -0.111111
 anchor/right = 1
 anchor/bottom = 1
 focus/ignore_mouse = true
@@ -509,17 +817,15 @@ texture = ExtResource( 7 )
 expand = true
 stretch_mode = 7
 
-[node name="mood" type="Sprite" parent="landscape/night"]
+[node name="moon" type="Sprite" parent="landscape/night"]
 
-visibility/visible = false
-transform/pos = Vector2( 199.897, 332.393 )
+transform/pos = Vector2( 242.005, 333.771 )
 transform/scale = Vector2( 0.5, 0.5 )
 texture = ExtResource( 8 )
 
 [node name="building" type="TextureFrame" parent="landscape/night"]
 
-visibility/visible = false
-visibility/opacity = 0.21135
+visibility/opacity = 0.259259
 anchor/right = 1
 anchor/bottom = 1
 focus/ignore_mouse = true
@@ -687,6 +993,7 @@ stretch_mode = 7
 [node name="lala_logo" type="TextureFrame" parent="computer"]
 
 visibility/visible = false
+visibility/opacity = 0.137639
 anchor/right = 1
 anchor/bottom = 1
 focus/ignore_mouse = true
@@ -751,35 +1058,9 @@ texture = ExtResource( 19 )
 expand = true
 stretch_mode = 7
 
-[node name="shadow" type="Light2D" parent="."]
+[node name="shadow" type="TextureFrame" parent="."]
 
-visibility/visible = false
-transform/pos = Vector2( 190, 350 )
-transform/scale = Vector2( 0.351852, 0.364583 )
-enabled = true
-editor_only = false
-texture = ExtResource( 20 )
-offset = Vector2( 0, 0 )
-scale = 1.0
-color = Color( 1, 1, 1, 0.677569 )
-energy = 1.0
-mode = 2
-range/height = -51.9
-range/z_min = 0
-range/z_max = 0
-range/layer_min = 0
-range/layer_max = 0
-range/item_mask = 1
-shadow/enabled = false
-shadow/color = Color( 0, 0, 0, 1 )
-shadow/buffer_size = 2048
-shadow/esm_multiplier = 1.0
-shadow/item_mask = 1
-
-[node name="start1" type="TextureFrame" parent="."]
-
-visibility/visible = false
-visibility/opacity = 0.45
+visibility/opacity = 0.421053
 anchor/right = 1
 anchor/bottom = 1
 focus/ignore_mouse = true
@@ -794,17 +1075,438 @@ texture = ExtResource( 20 )
 expand = true
 stretch_mode = 7
 
-[node name="Light2D" type="Light2D" parent="."]
+[node name="anim_events" type="AnimationPlayer" parent="."]
+
+playback/process_mode = 1
+playback/default_blend_time = 0.0
+root/root = NodePath("..")
+anims/christmas = SubResource( 7 )
+anims/hide = SubResource( 8 )
+anims/loose = SubResource( 9 )
+anims/meeting = SubResource( 10 )
+anims/rooftop = SubResource( 11 )
+anims/shareholders_party = SubResource( 12 )
+anims/space = SubResource( 13 )
+anims/win = SubResource( 14 )
+playback/active = true
+playback/speed = 1.0
+blend_times = [  ]
+autoplay = ""
+
+[node name="events" type="Control" parent="."]
+
+anchor/right = 1
+anchor/bottom = 1
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 0.0
+margin/bottom = 0.0
+
+[node name="chrismas" type="Control" parent="events"]
+
+editor/display_folded = true
+visibility/visible = false
+anchor/right = 1
+anchor/bottom = 1
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 0.0
+margin/bottom = 0.0
+
+[node name="background" type="TextureFrame" parent="events/chrismas"]
+
+anchor/right = 1
+anchor/bottom = 1
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 0.0
+margin/bottom = 0.0
+texture = ExtResource( 21 )
+expand = true
+stretch_mode = 7
+
+[node name="flake" type="Particles2D" parent="events/chrismas"]
+
+transform/pos = Vector2( 195.411, 101.346 )
+config/amount = 20
+config/lifetime = 4.0
+config/process_mode = 1
+config/half_extents = Vector2( 160, 0 )
+config/texture = ExtResource( 22 )
+params/direction = 0.0
+params/spread = 10.0
+params/linear_velocity = 20.0
+params/spin_velocity = 0.0
+params/orbit_velocity = 0.0
+params/gravity_direction = 0.0
+params/gravity_strength = 9.8
+params/radial_accel = 0.0
+params/tangential_accel = 0.0
+params/damping = 0.0
+params/initial_angle = 0.0
+params/initial_size = 0.2
+params/final_size = 0.2
+params/hue_variation = 0.0
+params/anim_speed_scale = 1.0
+params/anim_initial_pos = 0.0
+
+[node name="base" type="TextureFrame" parent="events/chrismas"]
+
+anchor/right = 1
+anchor/bottom = 1
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 0.0
+margin/bottom = 0.0
+texture = ExtResource( 23 )
+expand = true
+stretch_mode = 7
+
+[node name="light" type="TextureFrame" parent="events/chrismas"]
+
+visibility/opacity = 0.0
+anchor/right = 1
+anchor/bottom = 1
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 0.0
+margin/bottom = 0.0
+texture = ExtResource( 24 )
+expand = true
+stretch_mode = 7
+
+[node name="rooftop" type="Control" parent="events"]
+
+editor/display_folded = true
+visibility/visible = false
+anchor/right = 1
+anchor/bottom = 1
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 0.0
+margin/bottom = 0.0
+
+[node name="sky" type="TextureFrame" parent="events/rooftop"]
+
+anchor/right = 1
+anchor/bottom = 1
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 0.0
+margin/bottom = 0.0
+texture = ExtResource( 25 )
+expand = true
+stretch_mode = 7
+
+[node name="stars" type="Particles2D" parent="events/rooftop"]
+
+transform/pos = Vector2( 199.231, 176.918 )
+config/amount = 50
+config/lifetime = 10.0
+config/preprocess = 50.0
+config/process_mode = 1
+config/half_extents = Vector2( 150, 100 )
+config/texture = ExtResource( 6 )
+params/direction = 0.0
+params/spread = 10.0
+params/linear_velocity = 0.0
+params/spin_velocity = 0.0
+params/orbit_velocity = 0.0
+params/gravity_direction = 0.0
+params/gravity_strength = 0.0
+params/radial_accel = 0.0
+params/tangential_accel = 0.0
+params/damping = 0.0
+params/initial_angle = 0.0
+params/initial_size = 0.1
+params/final_size = 0.1
+params/hue_variation = 0.0
+params/anim_speed_scale = 1.0
+params/anim_initial_pos = 0.0
+randomness/initial_angle = 1.0
+randomness/initial_size = 1.0
+randomness/final_size = 1.0
+
+[node name="building" type="TextureFrame" parent="events/rooftop"]
+
+anchor/right = 1
+anchor/bottom = 1
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 0.0
+margin/bottom = 0.0
+texture = ExtResource( 26 )
+expand = true
+stretch_mode = 7
+
+[node name="base" type="TextureFrame" parent="events/rooftop"]
+
+anchor/right = 1
+anchor/bottom = 1
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 0.0
+margin/bottom = 0.0
+texture = ExtResource( 27 )
+expand = true
+stretch_mode = 7
+
+[node name="light" type="TextureFrame" parent="events/rooftop"]
+
+visibility/opacity = 0.149563
+anchor/right = 1
+anchor/bottom = 1
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 0.0
+margin/bottom = 0.0
+texture = ExtResource( 28 )
+expand = true
+stretch_mode = 7
+
+[node name="space" type="Control" parent="events"]
+
+editor/display_folded = true
+visibility/visible = false
+anchor/right = 1
+anchor/bottom = 1
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 0.0
+margin/bottom = 0.0
+
+[node name="sky" type="TextureFrame" parent="events/space"]
+
+anchor/right = 1
+anchor/bottom = 1
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 0.0
+margin/bottom = 0.0
+texture = ExtResource( 29 )
+expand = true
+stretch_mode = 7
+
+[node name="stars" type="Particles2D" parent="events/space"]
+
+transform/pos = Vector2( 199.231, 176.918 )
+config/amount = 50
+config/lifetime = 10.0
+config/preprocess = 50.0
+config/process_mode = 1
+config/half_extents = Vector2( 150, 100 )
+config/texture = ExtResource( 6 )
+params/direction = 0.0
+params/spread = 10.0
+params/linear_velocity = 0.0
+params/spin_velocity = 0.0
+params/orbit_velocity = 0.0
+params/gravity_direction = 0.0
+params/gravity_strength = 0.0
+params/radial_accel = 0.0
+params/tangential_accel = 0.0
+params/damping = 0.0
+params/initial_angle = 0.0
+params/initial_size = 0.1
+params/final_size = 0.1
+params/hue_variation = 0.0
+params/anim_speed_scale = 1.0
+params/anim_initial_pos = 0.0
+randomness/initial_angle = 1.0
+randomness/initial_size = 1.0
+randomness/final_size = 1.0
+
+[node name="earth" type="Sprite" parent="events/space"]
+
+transform/pos = Vector2( 198.788, 201.611 )
+transform/scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 30 )
+
+[node name="base" type="TextureFrame" parent="events/space"]
+
+anchor/right = 1
+anchor/bottom = 1
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 0.0
+margin/bottom = 0.0
+texture = ExtResource( 31 )
+expand = true
+stretch_mode = 7
+
+[node name="meeting" type="Control" parent="events"]
+
+editor/display_folded = true
+visibility/visible = false
+anchor/right = 1
+anchor/bottom = 1
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 0.0
+margin/bottom = 0.0
+
+[node name="meeting" type="TextureFrame" parent="events/meeting"]
+
+anchor/right = 1
+anchor/bottom = 1
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 0.0
+margin/bottom = 0.0
+texture = ExtResource( 32 )
+expand = true
+stretch_mode = 7
+
+[node name="shareholdersmeeting" type="Control" parent="events"]
+
+editor/display_folded = true
+visibility/visible = false
+anchor/right = 1
+anchor/bottom = 1
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 0.0
+margin/bottom = 0.0
+
+[node name="shareholdersmeeting" type="TextureFrame" parent="events/shareholdersmeeting"]
+
+anchor/right = 1
+anchor/bottom = 1
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 0.0
+margin/bottom = 0.0
+texture = ExtResource( 33 )
+expand = true
+stretch_mode = 7
+
+[node name="ends" type="Control" parent="events"]
+
+editor/display_folded = true
+anchor/right = 1
+anchor/bottom = 1
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 0.0
+margin/bottom = 0.0
+
+[node name="win" type="TextureFrame" parent="events/ends"]
+
+visibility/visible = false
+anchor/right = 1
+anchor/bottom = 1
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 0.0
+margin/bottom = 0.0
+texture = ExtResource( 34 )
+expand = true
+stretch_mode = 7
+
+[node name="loose" type="TextureFrame" parent="events/ends"]
+
+visibility/visible = false
+anchor/right = 1
+anchor/bottom = 1
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 0.0
+margin/bottom = 0.0
+texture = ExtResource( 35 )
+expand = true
+stretch_mode = 7
+
+[node name="texture" type="Light2D" parent="."]
 
 visibility/visible = false
 transform/pos = Vector2( 190, 350 )
-transform/scale = Vector2( 0.351852, 0.364583 )
+transform/scale = Vector2( 0.703704, 0.729167 )
 enabled = true
 editor_only = false
-texture = ExtResource( 21 )
+texture = ExtResource( 36 )
 offset = Vector2( 0, 0 )
 scale = 1.0
-color = Color( 1, 1, 1, 0.117647 )
+color = Color( 1, 1, 1, 0.152941 )
 energy = 1.0
 mode = 2
 range/height = 0.0

@@ -24,13 +24,16 @@ onready var timer_next_question = get_node("next_question")
 onready var money_l = get_node("MarginContainer/VBoxContainer/header/money")
 onready var mood_l = get_node("MarginContainer/VBoxContainer/header/mood")
 
+onready var q_anim = get_node("anim_dialog")
 onready var q_dialog = get_node("dialog")
-onready var q_illustration = get_node("dialog/question/illustration")
 onready var q_description = get_node("dialog/question/description")
 onready var q_comment = get_node("dialog/question/description")
 onready var q_answers = get_node("dialog/question/answers")
 
 onready var b_anim = get_node("Background/anim")
+onready var b_events = get_node("Background/anim_events")
+
+onready var anim_mood = get_node("anim_mood")
 
 var my_button = preload("../control/Button.tscn")
 
@@ -49,7 +52,7 @@ func load_data():
 	if not file.is_open():
 		file.open("/data.json", file.READ)
 	if not file.is_open():
-		file.open("res://data_FR.json", file.READ)
+		file.open("res://data_EN.json", file.READ)
 	var text = file.get_as_text()
 	var data = {}
 	data.parse_json(text)
@@ -66,7 +69,7 @@ func load_data():
 	
 	for i in range(questions.size()):
 		var q = questions[i]
-		for k in ["id", "description", "illustration"]:
+		for k in ["id", "description", "event"]:
 			if not q.has(k):
 				q[k] = ""
 				print("Miss key ", k, " in the question n°", i)
@@ -104,11 +107,11 @@ func start_timer_next_question():
 	timer_next_question.start() # utile ?
 
 func hide_all():
-	q_dialog.hide()
-	q_illustration.hide()
-	q_description.hide()
-	q_comment.hide()
-	q_answers.hide()
+	q_anim.play("close")
+#	q_dialog.hide()
+#	q_description.hide()
+#	q_comment.hide()
+#	q_answers.hide()
 
 func clear_answers():
 	while(q_answers.get_child_count() != 0):
@@ -117,7 +120,6 @@ func clear_answers():
 func disp_question(q):
 	hide_all()
 	q_description.set_text(q["description"])
-	#q_illustration
 	clear_answers()
 	for a in q["answers"]:
 		var b = my_button.instance()
@@ -125,10 +127,14 @@ func disp_question(q):
 		b.connect("pressed", self, "answer_question", [q, a])
 		q_answers.add_child(b)
 	
-	q_dialog.show()
-	q_description.show()
-	q_illustration.show()
-	q_answers.show()
+#	q_dialog.show()
+#	q_description.show()
+#	q_answers.show()
+	if  b_events.has_animation(q["event"]):
+		print("Start event")
+		b_events.play(q["event"])
+		
+	q_anim.play("open")
 
 func disp_comment(a):
 	hide_all()
@@ -138,9 +144,10 @@ func disp_comment(a):
 	b.set_text("Close")
 	b.connect("pressed", self, "close_comment")
 	q_answers.add_child(b)
-	q_dialog.show()
-	q_comment.show()
-	q_answers.show()
+#	q_dialog.show()
+#	q_comment.show()
+#	q_answers.show()
+	q_anim.play("open")
 
 func close_comment():
 	hide_all()
@@ -154,8 +161,19 @@ func disp_intro():
 	disp_message(text_intro)
 
 func update_gui():
-	money_l.set_text(String(money))
+	money_l.set_text("$"+String(money))
 	mood_l.set_text(String(mood))
+	
+	if mood > 80:
+		anim_mood.play("80-100")
+	elif mood > 60:
+		anim_mood.play("60-80")
+	elif mood > 50:
+		anim_mood.play("50-60")
+	elif mood > 20:
+		anim_mood.play("20-50")
+	else:
+		anim_mood.play("0-20")
 
 func add_pending_question(q):
 	if q["preparationTime"] == 0:
@@ -178,8 +196,17 @@ func preparation_timeout(q, t):
 func answer_question(q, a):
 	money += a["money"]
 	mood += a["mood"]
+	
+	if mood < 0:
+		mood = 0
+	if mood > 100:
+		mood = 100
+	
 	if questions_id.has(a["question"]):
 		add_pending_question(questions[questions_id[a["question"]]])
+	else:
+		print("Stop event")
+		b_events.play("hide")
 	
 	hide_all()
 	update_gui()
@@ -189,6 +216,7 @@ func answer_question(q, a):
 		start_timer_next_question()
 
 func get_rand_question():
+	print("Get rand question")
 	var q = {}
 	if not available_questions.empty():
 		var i_q = -1
@@ -199,6 +227,7 @@ func get_rand_question():
 	return q
 
 func get_pending_question():
+	print("Get pending question")
 	var q = {}
 	if not questions_pending.empty():
 		q = questions_pending[0]
@@ -207,10 +236,19 @@ func get_pending_question():
 
 func show_question():
 	var q = get_rand_question() if questions_pending.empty() else get_pending_question()
-	print("Disp question : ", q)
-	disp_question(q)
+	if q.size() > 0:
+		print("Disp question : ", q)
+		disp_question(q)
+
+func finish(anim_name):
+		game_finished = true
+		available_questions.clear()
+		questions_pending.clear()
+		timer_next_question.stop()
+		b_events.play(anim_name)
 
 func check_game_state():
+	print("Game check")
 	if not game_finished:
 		if available_questions.empty() and questions_pending.empty():
 			if questions_id.has(final_question):
@@ -218,11 +256,13 @@ func check_game_state():
 				final_question = ""
 		
 		if money <= stage_win_money:
-			game_finished = true
+			finish("win")
 			disp_message(text_end_win)
+			print("win")
 		elif money >= stage_lose_money:
-			game_finished = true
+			finish("loose")
 			disp_message(text_end_lose)
+			print("loose")
 
 func _ready():
 	b_anim.set_speed(0.05)
@@ -233,4 +273,6 @@ func _ready():
 	disp_intro()
 
 func _on_next_question_timeout():
+	print("Time to display a new question")
+	check_game_state()
 	show_question()
