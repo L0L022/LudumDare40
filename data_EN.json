@@ -488,14 +488,14 @@
       "preparationTime": 0,
       "answers": [
         {
-          "label": "Finance an interstellar signals launcher to send love messages to infinity and beyond",
+          "label": "Finance an interstellar emitter to send love messages to infinity and beyond",
           "question": "",
           "comment": "It was hard work, but worth it: Lovely is the first and only company who provides a possibility of sending love messages into space through their Love Among The Stars service. And who knows, maybe one day an alien will answer.",
           "money": -1500,
           "mood": 20
         },
         {
-          "label": "Finance a scientific committee to identify matching profiles that would be so compatible they would marry even before seeing each other",
+          "label": "Finance a scientific committee to identify matching profiles",
           "question": "",
           "comment": "That's unbelievable! Some members trust our experts so much that they accepted getting married to somebody they have not met yet. So this is it, science could find love for you?",
           "money": -1000,
@@ -518,7 +518,7 @@
       "preparationTime": 0,
       "answers": [
         {
-          "label": "Finance a space signals launcher to send love messages to infinity and beyond",
+          "label": "Finance an interstellar emitter to send love messages to infinity and beyond",
           "question": "",
           "comment": "It was hard work, but worth it: Lovely is the first and only company who provides a possibility of sending love messages into space through their Love Among The Stars service. And who knows, maybe one day an alien will answer.",
           "money": -1500,
