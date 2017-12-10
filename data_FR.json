@@ -112,7 +112,7 @@
       "description": "L'escouade anti-trouble convoquée pour enquêter sur le magazine Megalow est maintenant prête. Où enquêter ?",
       "random": false,
       "availableTime": 0,
-      "preparationTime": 120,
+      "preparationTime": 0,
       "answers": [
         {
           "label": "Espionner les employés de Megalow chez eux",
@@ -135,7 +135,7 @@
       "description": "Aucune information ne semble confirmer les rumeurs sur le magazine local Megalow. Acceptez-vous le partenariat et ainsi bénéficier de la base de données du magazine ?",
       "random": false,
       "availableTime": 0,
-      "preparationTime": 120,
+      "preparationTime": 0,
       "answers": [
         {
           "label": "Accepter le partenariat",
