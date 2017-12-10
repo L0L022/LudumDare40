@@ -280,8 +280,8 @@
           "label": "Ne pas organiser le Noël de l'entreprise",
           "question": "",
           "comment": "A l'annonce de cette nouvelle, les salariés expriment leur mécontentement. Un mouvement social s'organise. Mais votre décision est prise, il n'y aura pas de Noël d'entreprise cette année.",
-          "money": -1000,
-          "mood": -30
+          "money": 0,
+          "mood": -50
         }
       ]
     },
